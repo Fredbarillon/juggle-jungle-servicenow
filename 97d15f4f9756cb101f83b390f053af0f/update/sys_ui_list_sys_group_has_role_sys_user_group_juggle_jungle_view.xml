@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="sys_user_group" relationship="" sys_domain="global" table="sys_group_has_role" version="2" view="juggle_jungle_view">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>group</element>
+            <list_id display_value="sys_group_has_role" element="NULL" name="sys_group_has_role" parent="sys_user_group" relationship="NULL" sys_domain="global" view="ae938199973647101f83b390f053af11">c4b3c1d9977647101f83b390f053afba</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 08:13:06</sys_created_on>
+            <sys_id>48b3c1d9977647101f83b390f053afbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 08:13:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>role</element>
+            <list_id display_value="sys_group_has_role" element="NULL" name="sys_group_has_role" parent="sys_user_group" relationship="NULL" sys_domain="global" view="ae938199973647101f83b390f053af11">c4b3c1d9977647101f83b390f053afba</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 08:13:06</sys_created_on>
+            <sys_id>ccb3c1d9977647101f83b390f053afbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 08:13:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>inherits</element>
+            <list_id display_value="sys_group_has_role" element="NULL" name="sys_group_has_role" parent="sys_user_group" relationship="NULL" sys_domain="global" view="ae938199973647101f83b390f053af11">c4b3c1d9977647101f83b390f053afba</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 08:13:06</sys_created_on>
+            <sys_id>44b3c1d9977647101f83b390f053afbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 08:13:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="sys_group_has_role" element="NULL" name="sys_group_has_role" parent="sys_user_group" relationship="NULL" sys_domain="global" view="ae938199973647101f83b390f053af11">c4b3c1d9977647101f83b390f053afba</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 08:13:06</sys_created_on>
+            <sys_id>c8b3c1d9977647101f83b390f053afbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 08:13:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_group_has_role</name>
+            <parent>sys_user_group</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 08:13:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4b3c1d9977647101f83b390f053afba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_group_has_role</sys_name>
+            <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+            <sys_update_name>sys_ui_list_sys_group_has_role_sys_user_group_juggle_jungle_view</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 08:13:06</sys_updated_on>
+            <sys_user/>
+            <view display_value="Juggle Jungle view" name="juggle_jungle_view">ae938199973647101f83b390f053af11</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

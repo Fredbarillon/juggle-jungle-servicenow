@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">895a3c469736cb101f83b390f053afef</canvas>
+        <component display_value="Donut">a2b0596cec6b9d49dd1ff9bf76b5084b</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":true,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":false,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":false,"showPercentageOfTotalInTooltip":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[{"id":"availability_status","label":"Availability Status"},{"id":"category","label":"Category"}],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Internal Equipement","sourceType":"table","tableOrViewName":"x_2099780_juggle_0_internal_equipement","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIwOTk3ODBfanVnZ2xlXzBfaW50ZXJuYWxfZXF1aXBlbWVudDE3ODcyNDMzNTkyODQ=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"center","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"Equipment Availability","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzIwOTk3ODBfanVnZ2xlXzBfaW50ZXJuYWxfZXF1aXBlbWVudDE3ODcyNDMzNTkyODQ=","id":"ZEdGaWJHVjRYekl3T1RrM09EQmZhblZuWjJ4bFh6QmZhVzUwWlhKdVlXeGZaWEYxYVhCbGJXVnVkREUzT0RjeU5ETXpOVGt5T0RRPTE3ODcyNDMzNjE3OTQ=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzIwOTk3ODBfanVnZ2xlXzBfaW50ZXJuYWxfZXF1aXBlbWVudDE3ODcyNDMzNTkyODQ=","groupByField":"availability_status","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"showTotalValue":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"dikz2k64","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","scoreType":"latest"}</component_props>
+        <h>13</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Availability Status","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.1ba4918a97f6cb101f83b390f053afa6"},{"comment":"","message":"Category","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.1ba4918a97f6cb101f83b390f053afa6"},{"comment":"","message":"Internal Equipement","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.1ba4918a97f6cb101f83b390f053afa6"},{"comment":"","message":"Equipment Availability","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.1ba4918a97f6cb101f83b390f053afa6"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.1ba4918a97f6cb101f83b390f053afa6"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.1ba4918a97f6cb101f83b390f053afa6"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 17:22:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1ba4918a97f6cb101f83b390f053afa6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>par_dashboard_widget_1ba4918a97f6cb101f83b390f053afa6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-04 08:54:56</sys_updated_on>
+        <visualization/>
+        <w>14</w>
+        <widget_props/>
+        <x>16</x>
+        <y>23</y>
+    </par_dashboard_widget>
+</record_update>

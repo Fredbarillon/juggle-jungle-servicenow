@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {}]]></script_false>
+        <script_true><![CDATA[function onCondition() {}]]></script_true>
+        <set_values/>
+        <short_description>invisible</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 14:13:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>397981be976a03101f83b390f053af17</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>invisible</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_ui_policy_397981be976a03101f83b390f053af17</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 14:54:26</sys_updated_on>
+        <table>x_2099780_juggle_0_preparation_task</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

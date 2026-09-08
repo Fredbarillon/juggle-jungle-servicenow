@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="f17941be976a03101f83b390f053afc9" sys_domain="global" table="x_2099780_juggle_0_preparation_task" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-10 14:13:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd7941be976a03101f83b390f053afcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2099780_juggle_0_preparation_task" name="x_2099780_juggle_0_preparation_task" sys_domain="global" view="Default view">f17941be976a03101f83b390f053afc9</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_2099780_juggle_0_preparation_task" sys_domain="global" view="Default view">a4c0493e972a03101f83b390f053af59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-10 14:13:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_2099780_juggle_0_preparation_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-10 14:13:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f17941be976a03101f83b390f053afc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2099780_juggle_0_preparation_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_f17941be976a03101f83b390f053afc9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-10 14:13:31</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

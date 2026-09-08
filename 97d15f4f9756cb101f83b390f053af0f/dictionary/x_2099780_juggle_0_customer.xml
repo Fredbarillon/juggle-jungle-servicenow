@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a6892b4f971acb101f83b390f053afa1" label="Customer" max_length="40" name="x_2099780_juggle_0_customer" type="collection">
+        <element label="Phone" mandatory="true" max_length="255" name="phone" type="phone_number_e164"/>
+        <element label="Adress" max_length="40" name="adress" type="address_simple"/>
+        <element display="true" label="Full Name" mandatory="true" max_length="155" name="full_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element label="Email" mandatory="true" max_length="155" name="email" type="string"/>
+        <element label="Notes" max_length="350" name="notes" type="string"/>
+    </element>
+</database>

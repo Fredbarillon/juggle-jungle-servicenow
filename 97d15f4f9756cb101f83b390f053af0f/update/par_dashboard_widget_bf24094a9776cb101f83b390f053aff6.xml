@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">895a3c469736cb101f83b390f053afef</canvas>
+        <component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":false,"xAxisTruncationType":"end","yAxisStyle":"default","showLegend":false,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"showPercentageOfTotalInTooltip":true,"yAxisHidden":false,"xAxisHidden":false,"colorConfig":{"type":"palette","palette":"2976b0cc9fac73001bb9baac757fcf9e"},"newReporting":false,"enableAddZerosAtApi":true,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Repair Request","sourceType":"table","tableOrViewName":"x_2099780_juggle_0_repair_request","filterQuery":"stateNOT IN4,7,3","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIwOTk3ODBfanVnZ2xlXzBfcmVwYWlyX3JlcXVlc3QxNzg3MjQxNTMxODUz","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"center","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"Current Repairs by state","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzIwOTk3ODBfanVnZ2xlXzBfcmVwYWlyX3JlcXVlc3QxNzg3MjQxNTMxODUz","id":"ZEdGaWJHVjRYekl3T1RrM09EQmZhblZuWjJ4bFh6QmZjbVZ3WVdseVgzSmxjWFZsYzNReE56ZzNNalF4TlRNeE9EVXoxNzg3MjQxNTM0NDM1","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzIwOTk3ODBfanVnZ2xlXzBfcmVwYWlyX3JlcXVlc3QxNzg3MjQxNTMxODUz","groupByField":"state","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":false,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"cwka28y9","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","scoreType":"latest"}</component_props>
+        <h>13</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Repair Request","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.bf24094a9776cb101f83b390f053aff6"},{"comment":"","message":"Current Repairs by state","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.bf24094a9776cb101f83b390f053aff6"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.bf24094a9776cb101f83b390f053aff6"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.895a3c469736cb101f83b390f053afef.bf24094a9776cb101f83b390f053aff6"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 16:10:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bf24094a9776cb101f83b390f053aff6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>par_dashboard_widget_bf24094a9776cb101f83b390f053aff6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-04 08:54:56</sys_updated_on>
+        <visualization/>
+        <w>13</w>
+        <widget_props/>
+        <x>0</x>
+        <y>23</y>
+    </par_dashboard_widget>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">17481675082003100a22e9371c04a4f3</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 12:40:41</sys_created_on>
+        <sys_id>eaba8813975ecb101f83b390f053af52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 12:40:41</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

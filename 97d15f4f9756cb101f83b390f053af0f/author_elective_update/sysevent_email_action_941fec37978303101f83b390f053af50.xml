@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="DELETE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_2099780_juggle_0_course_event_planning</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_2099780_juggle_0.recurring_class_remin</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>You have a class: ${activity_type} coming!</p>
+<p>Number: ${number}</p>
+<p>Preparation Status: ${preparation_status}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Recurring Class</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>true</push_message_only>
+        <recipient_fields>assigned_to</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Next class Reminder</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 11:26:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>941fec37978303101f83b390f053af50</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Recurring Class</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sysevent_email_action_941fec37978303101f83b390f053af50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 12:07:51</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="User triggered notification template">e79add0bc3658610c1a4be2bb001312f</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="DELETE">
+        <id>941fec37978303101f83b390f053af50</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 11:27:59</sys_created_on>
+        <sys_id>7d1038b3978303101f83b390f053afeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 11:27:59</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</application>
+        <file_path/>
+        <instance_id>a5adbad2ff25c718c80bf8e4fc4fd9b3</instance_id>
+        <instance_name>dev410318</instance_name>
+        <name>sysevent_email_action_941fec37978303101f83b390f053af50</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;x_2099780_juggle_0_course_event_planning&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;x_2099780_juggle_0.recurring_class_remin&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;You have a class: ${activity_type} coming!&lt;/p&gt;
+&lt;p&gt;Number: ${number}&lt;/p&gt;
+&lt;p&gt;Preparation Status: ${preparation_status}&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Recurring Class&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;true&lt;/push_message_only&gt;&lt;recipient_fields&gt;assigned_to&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;false&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Next class Reminder&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-07 11:26:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;941fec37978303101f83b390f053af50&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Recurring Class&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0"&gt;97d15f4f9756cb101f83b390f053af0f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Juggle Jungle Operations"&gt;97d15f4f9756cb101f83b390f053af0f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_941fec37978303101f83b390f053af50&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-07 12:07:51&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="User triggered notification template"&gt;e79add0bc3658610c1a4be2bb001312f&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;941fec37978303101f83b390f053af50&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-07 11:27:59&lt;/sys_created_on&gt;&lt;sys_id&gt;7d1038b3978303101f83b390f053afeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-07 11:27:59&lt;/sys_updated_on&gt;&lt;table&gt;sysevent_email_action&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>339523556</payload_hash>
+        <record_name>Recurring Class</record_name>
+        <reverted_from/>
+        <source>abd15f4f9756cb101f83b390f053af18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 12:07:51</sys_created_on>
+        <sys_id>b939b8bb97c303101f83b390f053af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a07bc482780000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 12:07:51</sys_updated_on>
+        <type>Notification</type>
+        <update_guid>b939b4bb8dc30310fdd3d675e13949b4</update_guid>
+        <update_guid_history>b939b4bb8dc30310fdd3d675e13949b4:339523556,6557bcb707c303108eb89b850aa067e7:162270615,abe4b873f2c30310261b63b609bf7583:907866200,f2943c334ac3031060bf0ca32fec6218:794440410,9bf3b4ff3783031065ff48cf09a461ed:-594968753,43b330ffc7830310680458a06b8eaf32:907866200,2180f8f74e8303100babe77b4fabb0c3:2129882339,a1cf64b71c830310831edf22f7ba1da7:1104774535</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 12:11:47</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_email_action">sysevent_email_action</sys_db_object>
+        <sys_id>778c4414d532415883528e3203b72844</sys_id>
+        <sys_metadata>941fec37978303101f83b390f053af50</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Recurring Class</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_parent display_value="Course &amp; Event Planning">8e76bcb697e603101f83b390f053af5f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_scope_delete display_value="">63de7404f1084b3a8de1b46bdb4426c1</sys_scope_delete>
+        <sys_update_name>sysevent_email_action_941fec37978303101f83b390f053af50</sys_update_name>
+        <sys_update_version display_value="sysevent_email_action_941fec37978303101f83b390f053af50">b939b8bb97c303101f83b390f053af41</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 12:11:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

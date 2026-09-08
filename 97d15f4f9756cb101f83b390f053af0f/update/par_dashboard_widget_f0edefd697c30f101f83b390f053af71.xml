@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">dbb5ab9697830f101f83b390f053af33</canvas>
+        <component display_value="List">7ff373544303121093711347efb8f23c</component>
+        <component_props>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showHeader":true,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headingLevel":2,"limit":10,"columnLimit":0,"maxCharLimit":40,"showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":false,"showColumnSorting":true,"allowAdditionalGroupByPerMetric":false,"sortByOrder":"ORDERBY","followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"componentId":"7dt0sef3","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","table":"x_2099780_juggle_0_activity_registration","showLinks":true,"wrapCellContent":"useLineBreaksUserPref","showViewAll":false,"showInlineEditing":true,"allowListPagination":true,"lineClamp":1,"headerTitleAlignment":"center","headerTitle":"Pending Payments","showBorder":true,"showExportOption":true,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Activity Registration","sourceType":"table","tableOrViewName":"x_2099780_juggle_0_activity_registration","filterQuery":"payment_status!=paid^ORpayment_status=null^payment_status!=refunded","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIwOTk3ODBfanVnZ2xlXzBfYWN0aXZpdHlfcmVnaXN0cmF0aW9uMTc4ODQyNzU0NTk4Mg==","dataCategories":["trend","group","simple"]}],"bareBorder":false,"showAdditionalGroupBySelector":false,"groupByField":""}</component_props>
+        <h>13</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.dbb5ab9697830f101f83b390f053af33.f0edefd697c30f101f83b390f053af71"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.dbb5ab9697830f101f83b390f053af33.f0edefd697c30f101f83b390f053af71"},{"comment":"","message":"Pending Payments","code":"PAR_DASHBOARD.dbb5ab9697830f101f83b390f053af33.f0edefd697c30f101f83b390f053af71"},{"comment":"","message":"Activity Registration","code":"PAR_DASHBOARD.dbb5ab9697830f101f83b390f053af33.f0edefd697c30f101f83b390f053af71"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-03 09:26:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f0edefd697c30f101f83b390f053af71</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>par_dashboard_widget_f0edefd697c30f101f83b390f053af71</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-04 07:53:14</sys_updated_on>
+        <visualization/>
+        <w>20</w>
+        <widget_props/>
+        <x>13</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

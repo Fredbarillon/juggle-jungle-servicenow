@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="b5d5289b97120f101f83b390f053aff6" extends="x_2099780_juggle_0_equipement" label="Customer Equipement" max_length="40" name="x_2099780_juggle_0_customer_equipement" type="collection">
+        <element label="Customer" mandatory="true" max_length="32" name="customer" reference="x_2099780_juggle_0_customer" type="reference"/>
+        <index name="index">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0749c7a097f603101f83b390f053aff8" label="Activity Registration" max_length="40" name="x_2099780_juggle_0_activity_registration" type="collection">
+        <element label="Course or Event" max_length="32" name="course_or_event" reference="x_2099780_juggle_0_course_event_planning" type="reference"/>
+        <element label="Payment Status" max_length="255" name="payment_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Refunded" sequence="3" value="refunded"/>
+                <element inactive_on_update="false" label="Not required" sequence="0" value="not_required"/>
+                <element inactive_on_update="false" label="Paid" sequence="2" value="paid"/>
+            </choice>
+        </element>
+        <element label="Student" max_length="32" name="student" reference="x_2099780_juggle_0_student" type="reference"/>
+        <element label="level" max_length="40" name="level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Advanced" sequence="2" value="advanced"/>
+                <element inactive_on_update="false" label="Intermediate" sequence="1" value="intermediate"/>
+                <element inactive_on_update="false" label="Beginner" sequence="0" value="beginner"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="course_or_event"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_2099780_juggle_0_communication_content</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-16 07:13:44</sys_created_on>
+        <sys_id>43e2e2e097b203101f83b390f053af79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2099780_juggle_0_communication_content</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_security_acl_43e2e2e097b203101f83b390f053af79</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-16 07:13:44</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</application>
+        <file_path/>
+        <instance_id>a5adbad2ff25c718c80bf8e4fc4fd9b3</instance_id>
+        <instance_name>dev410318</instance_name>
+        <name>sys_security_acl_43e2e2e097b203101f83b390f053af79</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_2099780_juggle_0_communication_content</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-16 07:13:44</sys_created_on><sys_id>43e2e2e097b203101f83b390f053af79</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_2099780_juggle_0_communication_content</sys_name><sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package><sys_policy/><sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope><sys_update_name>sys_security_acl_43e2e2e097b203101f83b390f053af79</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-16 07:13:44</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-2090168863</payload_hash>
+        <record_name>x_2099780_juggle_0_communication_content</record_name>
+        <reverted_from/>
+        <source>abd15f4f9756cb101f83b390f053af18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-16 07:13:44</sys_created_on>
+        <sys_id>07e2e2e097b203101f83b390f053af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0096b565d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-16 07:13:44</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>c3e2e2e0a4b203109c065501c35eff96</update_guid>
+        <update_guid_history>c3e2e2e0a4b203109c065501c35eff96:-2090168863</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-16 07:27:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>90905d549db4459a92abf59b54329761</sys_id>
+        <sys_metadata>43e2e2e097b203101f83b390f053af79</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2099780_juggle_0_communication_content</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_parent display_value="">fde262e097b203101f83b390f053af49</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_scope_delete display_value="">63de7404f1084b3a8de1b46bdb4426c1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_43e2e2e097b203101f83b390f053af79</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_43e2e2e097b203101f83b390f053af79">07e2e2e097b203101f83b390f053af97</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-16 07:27:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

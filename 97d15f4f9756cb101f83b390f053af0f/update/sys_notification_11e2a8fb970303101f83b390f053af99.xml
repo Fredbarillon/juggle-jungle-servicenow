@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_notification">
+    <sys_notification action="INSERT_OR_UPDATE">
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <advanced_event_condition>false</advanced_event_condition>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <condition table="x_2099780_juggle_0_preparation_task">assigned_toISNOTEMPTY^assigned_toVALCHANGES^EQ<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <event/>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_1_table>sys_user</event_parm_1_table>
+        <event_parm_2>false</event_parm_2>
+        <event_parm_2_table>sys_user</event_parm_2_table>
+        <include_originator>false</include_originator>
+        <mandatory>false</mandatory>
+        <name>Preparation Task Bell Notification</name>
+        <notification_classifier/>
+        <order>100</order>
+        <recipient_fields>assigned_to</recipient_fields>
+        <recipient_users/>
+        <script><![CDATA[(function runRecipientScript(/*String*/ parm1, /*String*/ parm2) {
+      /*
+      //Create instance of AdvancedNotificationRecipients to add recipients
+      var nr = new sn_notification.AdvancedNotificationRecipients();
+      var sysIds = [];
+      var gr = new GlideRecord('sys_user');
+      gr.addQuery('first_name','IN',parm1);
+      gr.query();
+      while (gr.next()) {
+        sysIds.push(gr.getValue('sys_id'));
+      }
+      nr.addRecipientInfo('sys_user',sysIds);
+      return nr;*/
+      })(parm1,parm2);]]></script>
+        <sys_class_name>sys_notification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 10:45:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11e2a8fb970303101f83b390f053af99</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Preparation Task Bell Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_notification_11e2a8fb970303101f83b390f053af99</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 10:48:54</sys_updated_on>
+        <table>x_2099780_juggle_0_preparation_task</table>
+        <triggered_by>record_change</triggered_by>
+    </sys_notification>
+</record_update>

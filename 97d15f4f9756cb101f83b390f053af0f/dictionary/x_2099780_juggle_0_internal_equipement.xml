@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="92bf1c5f97decb101f83b390f053af01" extends="x_2099780_juggle_0_equipement" label="Internal Equipement" max_length="40" name="x_2099780_juggle_0_internal_equipement" type="collection">
+        <element label="Loaned to" max_length="32" name="loaned_to" reference="x_2099780_juggle_0_customer" type="reference"/>
+        <element choice="3" default="available" label="Availability Status" max_length="40" name="availability_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="2" value="available"/>
+                <element inactive_on_update="false" label="In use" sequence="1" value="in_use"/>
+                <element inactive_on_update="false" label="Under maintenance" sequence="3" value="under_maintenance"/>
+                <element inactive_on_update="false" label="Lent" sequence="4" value="lent"/>
+                <element inactive_on_update="false" label="Retired" sequence="0" value="retired"/>
+            </choice>
+        </element>
+        <element label="Last Maintenance Date" max_length="40" name="last_maintenance_date" type="glide_date"/>
+        <element label="Loaned Date" max_length="40" name="loaned_date" type="glide_date"/>
+        <element choice="3" default="good" label="Condition" mandatory="true" max_length="255" name="condition" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Good" sequence="1" value="good"/>
+                <element inactive_on_update="false" label="excellent" sequence="0" value="excellent"/>
+                <element inactive_on_update="false" label="average" sequence="2" value="average"/>
+                <element inactive_on_update="false" label="bad" sequence="3" value="bad"/>
+            </choice>
+        </element>
+        <element label="Expected Return Date" max_length="255" name="expected_return_date" type="glide_date"/>
+        <element choice="3" label="Usage" max_length="255" name="usage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="events" sequence="1" value="events"/>
+                <element inactive_on_update="false" label="lessons" sequence="0" value="lessons"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="loaned_to"/>
+        </index>
+    </element>
+</database>

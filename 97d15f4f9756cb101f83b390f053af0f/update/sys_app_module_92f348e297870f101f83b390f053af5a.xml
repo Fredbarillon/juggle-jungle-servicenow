@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Juggle Jungle Operations">8e5f891597f647101f83b390f053af71</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Technician Dashboard</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>730</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>/now/platform-analytics-workspace/dashboards/params/edit/false/tab-sys-id/4b64882697870f101f83b390f053af81/sys-id/c364482697870f101f83b390f053afe3/__state__/b64~eyI5MjNhOTEzYjUzMmMwMTEwYWFiOWRkZWVmZjdiMTI0MyI6eyJsaXN0X2NvbnRyb2xsZXJfMyI6eyJfIjp7InF1ZXJ5Ijoic3RhdHVzSU50b19yZXZpZXcsdG9fcHVibGlzaF5wdWJsaWNhdGlvbl9kYXRlPj1qYXZhc2NyaXB0OmdzLmJlZ2lubmluZ09mVG9kYXkoKV5PUnB1YmxpY2F0aW9uX2RhdGVJU0VNUFRZXkdST1VQQllwdWJsaWNhdGlvbl9kYXRlIn19fX0%3D</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_2099780_juggle_0.technician</roles>
+        <route/>
+        <screen/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-03 11:09:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>92f348e297870f101f83b390f053af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Technician Dashboard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_app_module_92f348e297870f101f83b390f053af5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-03 11:09:00</sys_updated_on>
+        <timeline_page/>
+        <title>Technician Dashboard</title>
+        <uncancelable>false</uncancelable>
+        <ux_list/>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

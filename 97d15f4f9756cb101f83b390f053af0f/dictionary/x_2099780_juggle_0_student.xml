@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="dcb7cfac97b603101f83b390f053afb6" label="Student" max_length="40" name="x_2099780_juggle_0_student" type="collection">
+        <element label="Email" max_length="255" name="email" type="string"/>
+        <element label="Full Name" mandatory="true" max_length="155" name="full_name" type="string"/>
+        <element label="Telephone" max_length="40" name="telephone" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Notes" max_length="400" name="notes" type="string"/>
+        <element label="Customer Record" max_length="32" name="customer_record" reference="x_2099780_juggle_0_customer" type="reference"/>
+        <element default="true" label="Active" max_length="255" name="active" type="boolean"/>
+        <index name="index">
+            <element name="customer_record"/>
+        </index>
+    </element>
+</database>

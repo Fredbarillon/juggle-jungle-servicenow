@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 12:44:04</sys_created_on>
+        <sys_id>848b0493975ecb101f83b390f053af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2099780_juggle_0_brand.x_2099780_juggle_0.admin</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_security_acl display_value="x_2099780_juggle_0_brand">ff7bc093975ecb101f83b390f053af15</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_848b0493975ecb101f83b390f053af0b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 12:44:04</sys_updated_on>
+        <sys_user_role display_value="x_2099780_juggle_0.admin" name="x_2099780_juggle_0.admin">2fd15f4f9756cb101f83b390f053af48</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

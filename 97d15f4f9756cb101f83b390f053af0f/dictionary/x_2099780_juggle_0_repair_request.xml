@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="62fd938797d6cb101f83b390f053afa5" extends="task" label="Repair Request" max_length="40" name="x_2099780_juggle_0_repair_request" type="collection">
+        <element label="Supplier" max_length="32" name="supplier" reference="x_2099780_juggle_0_supplier" type="reference"/>
+        <element label="Billing Status" max_length="255" name="billing_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No documents" sequence="0" value="no_documents"/>
+                <element inactive_on_update="false" label="Invoiced" sequence="2" value="invoiced"/>
+                <element inactive_on_update="false" label="Quote issued" sequence="1" value="quote_issued"/>
+            </choice>
+        </element>
+        <element label="Customer Equipement" mandatory="true" max_length="32" name="customer_equipement" reference="x_2099780_juggle_0_customer_equipement" type="reference"/>
+        <element label="Customer" max_length="32" name="customer" reference="x_2099780_juggle_0_customer" type="reference"/>
+    </element>
+</database>

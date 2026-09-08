@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_next_experience_content">
+    <sys_notification_next_experience_content action="INSERT_OR_UPDATE">
+        <action_name/>
+        <action_payload/>
+        <active>true</active>
+        <is_default>false</is_default>
+        <message><![CDATA[
+Customer: ${customer} - Customer Equipement: ${customer_equipement} - Priority: ${priority}]]></message>
+        <message_heading><![CDATA[New repair assigned: ${number}]]></message_heading>
+        <name>Repair Assignment Content</name>
+        <notification display_value="Repair Assignment">ec1a203b974303101f83b390f053afaf</notification>
+        <route display_value="Next Experience Route">bccd1214533201107cd3ddeeff7b1289</route>
+        <sys_class_name>sys_notification_next_experience_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 11:05:49</sys_created_on>
+        <sys_id>579a28fb974303101f83b390f053afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Repair Assignment Content</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_notification_next_experience_content_579a28fb974303101f83b390f053afda</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 11:05:49</sys_updated_on>
+        <use_action>false</use_action>
+    </sys_notification_next_experience_content>
+</record_update>

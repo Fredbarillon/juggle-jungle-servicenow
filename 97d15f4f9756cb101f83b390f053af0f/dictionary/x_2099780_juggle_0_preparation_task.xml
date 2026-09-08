@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d4c0093e972a03101f83b390f053afdd" extends="task" label="Preparation Task" max_length="40" name="x_2099780_juggle_0_preparation_task" type="collection">
+        <element label="Course or Event" mandatory="true" max_length="32" name="course_or_event" reference="x_2099780_juggle_0_course_event_planning" type="reference"/>
+    </element>
+</database>

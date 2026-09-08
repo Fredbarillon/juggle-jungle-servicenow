@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="752666a897b203101f83b390f053af0e" label="Communication Content" max_length="40" name="x_2099780_juggle_0_communication_content" type="collection">
+        <element label="Course or Event" max_length="32" name="course_or_event" reference="x_2099780_juggle_0_course_event_planning" type="reference"/>
+        <element label="Publication Date" max_length="40" name="publication_date" type="glide_date"/>
+        <element label="Title" mandatory="true" max_length="155" name="title" type="string"/>
+        <element label="Supplier" max_length="32" name="supplier" reference="x_2099780_juggle_0_supplier" type="reference"/>
+        <element label="Draft Content" mandatory="true" max_length="4000" name="draft_content" type="html"/>
+        <element label="Notes" max_length="400" name="notes" type="string"/>
+        <element label="YouTube" max_length="40" name="youtube" type="boolean"/>
+        <element label="Knowlede Article" max_length="32" name="knowlede_article" reference="kb_knowledge" type="reference"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="To Review" sequence="0" value="to_review"/>
+                <element inactive_on_update="false" label="Published" sequence="2" value="published"/>
+                <element inactive_on_update="false" label="To Publish" sequence="1" value="to_publish"/>
+            </choice>
+        </element>
+        <element label="Tik Tok" max_length="40" name="tik_tok" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Brand" max_length="32" name="brand" reference="x_2099780_juggle_0_brand" type="reference"/>
+        <element label="Website" max_length="40" name="website" type="boolean"/>
+        <element label="FaceBook" max_length="40" name="facebook" type="boolean"/>
+        <index name="index">
+            <element name="brand"/>
+        </index>
+        <index name="index2">
+            <element name="course_or_event"/>
+        </index>
+        <index name="index3">
+            <element name="knowlede_article"/>
+        </index>
+        <index name="index4">
+            <element name="supplier"/>
+        </index>
+    </element>
+</database>
