@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="8e76bcb697e603101f83b390f053af5f" label="Course &amp; Event Planning" max_length="40" name="x_2099780_juggle_0_course_event_planning" type="collection">
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element choice="1" label="Recurrence" mandatory="true" max_length="40" name="recurrence" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yearly" sequence="4" value="yearly"/>
+                <element inactive_on_update="false" label="Monthly" sequence="2" value="monthly"/>
+                <element inactive_on_update="false" label="Weekly" sequence="1" value="weekly"/>
+                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
+                <element inactive_on_update="false" label="Quarterly" sequence="3" value="quarterly"/>
+            </choice>
+        </element>
+        <element label="Next Class" max_length="40" name="next_class" type="glide_date"/>
+        <element choice="3" default="in_preparation" label="Preparation Status" max_length="255" name="preparation_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="2" value="cancelled"/>
+                <element inactive_on_update="false" label="In preparation" sequence="0" value="in_preparation"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="completed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="287002aa971e87101f83b390f053af29" label="Assigned to" mandatory="true" max_length="32" name="assigned_to" read_only="true" read_only_option="display_read_only" reference="sys_user" type="reference"/>
+        <element label="Location" mandatory="true" max_length="40" name="location" type="string"/>
+        <element label="Edition History" max_length="40" name="edition_history" type="journal"/>
+        <element label="Starting Date" mandatory="true" max_length="40" name="date" type="glide_date_time"/>
+        <element choice="3" default="course" label="Activity Type" mandatory="true" max_length="255" name="activity_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Event" sequence="1" value="event"/>
+                <element inactive_on_update="false" label="Course" sequence="0" value="course"/>
+            </choice>
+        </element>
+        <element label="Participants" max_length="40" name="participants" type="integer"/>
+        <element label="Notes" max_length="500" name="notes" type="string"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab">
+    <par_dashboard_tab action="DELETE">
+        <active>true</active>
+        <background_color/>
+        <dashboard display_value="Juggle Jungle - Director Dashboard">725930829736cb101f83b390f053afb2</dashboard>
+        <name>New Tab 3</name>
+        <order>2</order>
+        <sys_class_name>par_dashboard_tab</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 15:27:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>895a3c469736cb101f83b390f053aff3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>par_dashboard_tab_895a3c469736cb101f83b390f053aff3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 15:27:39</sys_updated_on>
+    </par_dashboard_tab>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</application>
+        <file_path/>
+        <instance_id>a5adbad2ff25c718c80bf8e4fc4fd9b3</instance_id>
+        <instance_name>dev410318</instance_name>
+        <name>par_dashboard_tab_895a3c469736cb101f83b390f053aff3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab"><par_dashboard_tab action="INSERT_OR_UPDATE"><active>true</active><background_color/><dashboard display_value="Juggle Jungle - Director Dashboard">725930829736cb101f83b390f053afb2</dashboard><name>New Tab 3</name><order>2</order><sys_class_name>par_dashboard_tab</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-20 15:27:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>895a3c469736cb101f83b390f053aff3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New Tab 3</sys_name><sys_overrides/><sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package><sys_policy/><sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope><sys_update_name>par_dashboard_tab_895a3c469736cb101f83b390f053aff3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-20 15:27:39</sys_updated_on></par_dashboard_tab></record_update>]]></payload>
+        <payload_hash>-1221055830</payload_hash>
+        <record_name>New Tab 3</record_name>
+        <reverted_from/>
+        <source>abd15f4f9756cb101f83b390f053af18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 15:27:39</sys_created_on>
+        <sys_id>455a7c469736cb101f83b390f053af03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a01fc8f9310000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 15:27:39</sys_updated_on>
+        <type>PAR Dashboard Tab</type>
+        <update_guid>055a7c466836cb10108d0d0f00aa8002</update_guid>
+        <update_guid_history>055a7c466836cb10108d0d0f00aa8002:-1221055830</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="New Tab 3">a5df38029776cb101f83b390f053af97</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 15:51:43</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_tab">par_dashboard_tab</sys_db_object>
+        <sys_id>e0f3cbf463e34b4092cf8289ce091000</sys_id>
+        <sys_metadata>895a3c469736cb101f83b390f053aff3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 3</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_scope_delete display_value="">63de7404f1084b3a8de1b46bdb4426c1</sys_scope_delete>
+        <sys_update_name>par_dashboard_tab_895a3c469736cb101f83b390f053aff3</sys_update_name>
+        <sys_update_version display_value="par_dashboard_tab_895a3c469736cb101f83b390f053aff3">455a7c469736cb101f83b390f053af03</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 15:51:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

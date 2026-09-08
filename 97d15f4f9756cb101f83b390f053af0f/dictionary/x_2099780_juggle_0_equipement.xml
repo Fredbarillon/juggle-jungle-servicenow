@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="f9b38493971ecb101f83b390f053af10" label="Equipement" max_length="40" name="x_2099780_juggle_0_equipement" type="collection">
+        <element label="photo" max_length="40" name="photo" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Brand" mandatory="true" max_length="32" name="brand" reference="x_2099780_juggle_0_brand" type="reference"/>
+        <element label="Notes" max_length="500" name="notes" type="string"/>
+        <element label="Knowledge Base Articles" max_length="40" name="knowledge_base_articles" reference="kb_knowledge" type="glide_list"/>
+        <element choice="1" label="Category" mandatory="true" max_length="255" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Juggling Clubs" sequence="4" value="juggling_clubs"/>
+                <element inactive_on_update="false" label="Contact Balls" sequence="2" value="contact_balls"/>
+                <element inactive_on_update="false" label="Accessories" sequence="6" value="accessories"/>
+                <element inactive_on_update="false" label="Poi" sequence="8" value="poi"/>
+                <element inactive_on_update="false" label="Unicycles" sequence="5" value="unicycles"/>
+                <element inactive_on_update="false" label="Devil Sticks" sequence="3" value="devil_sticks"/>
+                <element inactive_on_update="false" label="Juggling Balls" sequence="0" value="juggling_balls"/>
+                <element inactive_on_update="false" label="Diabolos" sequence="1" value="diabolos"/>
+                <element inactive_on_update="false" label="Miscellaneous" sequence="7" value="miscellaneous"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element label="Model" max_length="255" name="model" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Supplier" max_length="32" name="supplier" reference="x_2099780_juggle_0_supplier" type="reference"/>
+        <index name="index">
+            <element name="brand"/>
+        </index>
+        <index name="index2">
+            <element name="supplier"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

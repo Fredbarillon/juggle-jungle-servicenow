@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Allows the Sales &amp; HR Manager to manage activities, suppliers, preparation tasks and communication content.</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>Qqd9oVqEwxdvq3GdBIkKSR6n5/I+AaiPzr1FBeSNu/Y=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2099780_juggle_0.sales_hr</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>sales_hr</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 08:03:41</sys_created_on>
+        <sys_id>1281c195977647101f83b390f053afa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2099780_juggle_0.sales_hr</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_user_role_1281c195977647101f83b390f053afa3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 08:03:41</sys_updated_on>
+    </sys_user_role>
+</record_update>

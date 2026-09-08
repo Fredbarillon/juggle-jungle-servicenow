@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3b1bb832972a03101f83b390f053af0f" label="Activity Equipment" max_length="40" name="x_2099780_juggle_0_activity_equipment" type="collection">
+        <element label="Internal Equipment" mandatory="true" max_length="32" name="internal_equipment" reference="x_2099780_juggle_0_internal_equipement" type="reference"/>
+        <element label="Course or Event" mandatory="true" max_length="32" name="course_or_event" reference="x_2099780_juggle_0_course_event_planning" type="reference"/>
+        <index name="index">
+            <element name="course_or_event"/>
+        </index>
+        <index name="index2">
+            <element name="internal_equipment"/>
+        </index>
+    </element>
+</database>

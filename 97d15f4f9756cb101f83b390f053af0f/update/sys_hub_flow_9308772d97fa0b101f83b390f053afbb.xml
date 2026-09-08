@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4811000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a notification to a technician when a repair request is assigned to them</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>repair_assignment_notification</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.assigned_to.first_name","label":"Trigger - Record Created or Updated➛Repair Request Record➛Assigned to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]},"attributes":null},{"name":"Created or Updated_1.current.assigned_to.email","label":"Trigger - Record Created or Updated➛Repair Request Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":["ah_to"]},"attributes":null},{"name":"Created or Updated_1.changed_fields","label":"Trigger - Record Created or Updated➛Changed Fields","reference":null,"reference_display":null,"type":"array.object","base_type":"array.object","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"32f065b3-1219-42cb-99f7-8140d645a174":["items"]},"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"32f065b3-1219-42cb-99f7-8140d645a174.item","label":"1 - For Each➛FDChangeDetails","reference":null,"reference_display":"FDChangeDetails","type":"object","base_type":"object","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"trigger.current.due_date","label":"Trigger - Record Created or Updated➛Repair Request Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"due_date","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{},"attributes":null},{"name":"Created or Updated_1.current.priority","label":"Trigger - Record Created or Updated➛Repair Request Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"priority","choices":[{"label":"-- None --","used":false,"sequence":-1.0,"selected":false,"image":"","rawLabel":"-- None --","missing":false,"reference":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","used":false,"sequence":1.0,"selected":false,"image":"","rawLabel":"1 - Critical","missing":false,"reference":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","used":false,"sequence":2.0,"selected":false,"image":"","rawLabel":"2 - High","missing":false,"reference":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","used":false,"sequence":3.0,"selected":false,"image":"","rawLabel":"3 - Moderate","missing":false,"reference":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","used":false,"sequence":4.0,"selected":false,"image":"","rawLabel":"4 - Low","missing":false,"reference":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","used":false,"sequence":5.0,"selected":false,"image":"","rawLabel":"5 - Planning","missing":false,"reference":false,"value":"5"}],"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]},"attributes":null},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Repair Request Record","reference":"x_2099780_juggle_0_repair_request","reference_display":"Repair Request","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":["record",null]},"attributes":{}},{"name":"32f065b3-1219-42cb-99f7-8140d645a174.item.field_name","label":"1 - For Each➛FDChangeDetails➛Field Name","reference":"","reference_display":"Field Name","type":"string","base_type":"string","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"aaddb7b5-af0c-4039-8f7d-40c53604a9c5":["condition"]},"attributes":{}},{"name":"Created or Updated_1.current.customer","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer","reference":"x_2099780_juggle_0_customer","reference_display":"Customer","type":"reference","base_type":"reference","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"customer","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]},"attributes":null},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Repair Request Table","reference":"x_2099780_juggle_0_repair_request","reference_display":"Repair Request","type":"table_name","base_type":"table_name","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created or Updated_1.current.customer.full_name","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer➛Full Name","reference":"","reference_display":"Full Name","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_customer","column_name":"full_name","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]},"attributes":null},{"name":"Created or Updated_1.current.customer_equipement.name","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer Equipement➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_customer_equipement","column_name":"name","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]},"attributes":null},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Repair Request Record➛Repair Number","reference":"","reference_display":"Repair Number","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"number","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null,"ah_subject"]},"attributes":null},{"name":"Created or Updated_1.current.customer_equipement","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer Equipement","reference":"x_2099780_juggle_0_customer_equipement","reference_display":"Customer Equipement","type":"reference","base_type":"reference","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"customer_equipement","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]},"attributes":null},{"name":"trigger.current","label":"Trigger - Record Created or Updated➛Repair Request Record","reference":"x_2099780_juggle_0_repair_request","reference_display":"Repair Request","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{},"attributes":{"":""}},{"name":"Created or Updated_1.current.activity_due","label":"Trigger - Record Created or Updated➛Repair Request Record➛Expected Completion","reference":"","reference_display":"Expected Completion","type":"due_date","base_type":"due_date","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"activity_due","choices":null,"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]},"attributes":null}]</label_cache>
+        <master_snapshot>8a6a08f197be0b101f83b390f053af5d</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Repair assignment notification</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>9e6a08f197be0b101f83b390f053aff0</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 15:59:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9308772d97fa0b101f83b390f053afbb</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Repair assignment notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_hub_flow_9308772d97fa0b101f83b390f053afbb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 11:13:45</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>0fcce033978303101f83b390f053af7d</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9308772d97fa0b101f83b390f053afbb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9308772d97fa0b101f83b390f053afbb"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2099780_juggle_0_repair_request">assigned_toISNOTEMPTY<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e6a08f197be0b101f83b390f053aff0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <table>x_2099780_juggle_0_repair_request</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>9308772d97fa0b101f83b390f053afbb</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>5a6a08f197be0b101f83b390f053aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <trigger display_value="">9e6a08f197be0b101f83b390f053aff0</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=9308772d97fa0b101f83b390f053afbb^sys_idNOT IN5a6a08f197be0b101f83b390f053aff2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9308772d97fa0b101f83b390f053afbb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9308772d97fa0b101f83b390f053afbb^sys_idNOT INdb08772d97fa0b101f83b390f053afbf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9308772d97fa0b101f83b390f053afbb</id>
+        <name>Repair assignment notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 15:59:35</sys_created_on>
+        <sys_id>db08772d97fa0b101f83b390f053afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 15:59:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=db08772d97fa0b101f83b390f053afbf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9308772d97fa0b101f83b390f053afbb^sys_idNOT IN84283fad97fa0b101f83b390f053afcd,bce24435977e0b101f83b390f053af9d,c4283fad97fa0b101f83b390f053af60"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</model>
+        <model_id>9308772d97fa0b101f83b390f053afbb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9308772d97fa0b101f83b390f053afbb</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 15:59:56</sys_created_on>
+        <sys_id>84283fad97fa0b101f83b390f053afcd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:46:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=84283fad97fa0b101f83b390f053afcd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</model>
+        <model_id>9308772d97fa0b101f83b390f053afbb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9308772d97fa0b101f83b390f053afbb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:46:56</sys_created_on>
+        <sys_id>bce24435977e0b101f83b390f053af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:46:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bce24435977e0b101f83b390f053af9d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</model>
+        <model_id>9308772d97fa0b101f83b390f053afbb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9308772d97fa0b101f83b390f053afbb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 15:59:55</sys_created_on>
+        <sys_id>c4283fad97fa0b101f83b390f053af60</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:46:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4283fad97fa0b101f83b390f053af60"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9308772d97fa0b101f83b390f053afbb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9308772d97fa0b101f83b390f053afbb"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9308772d97fa0b101f83b390f053afbb^sys_idNOT IN9b28bfad97fa0b101f83b390f053afbe"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:00:09</sys_created_on>
+        <sys_id>9b28bfad97fa0b101f83b390f053afbe</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:46</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9308772d97fa0b101f83b390f053afbb^sys_idNOT IN901d7b29973e0b101f83b390f053afc1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>aaddb7b5-af0c-4039-8f7d-40c53604a9c5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:21:31</sys_created_on>
+        <sys_id>901d7b29973e0b101f83b390f053afc1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:20:21</sys_updated_on>
+        <ui_id>c2402a2e-92f7-4154-a3b4-e153685b07f5</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=901d7b29973e0b101f83b390f053afc1"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9308772d97fa0b101f83b390f053afbb"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9308772d97fa0b101f83b390f053afbb^sys_idNOT IN5bbb7f65973e0b101f83b390f053af1f,a92bbb25973e0b101f83b390f053afc3"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">38e24435977e0b101f83b390f053afd7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>32f065b3-1219-42cb-99f7-8140d645a174</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:15:43</sys_created_on>
+        <sys_id>5bbb7f65973e0b101f83b390f053af1f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 11:13:35</sys_updated_on>
+        <ui_id>aaddb7b5-af0c-4039-8f7d-40c53604a9c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBT8FYNnWdDqxL4FDgIUaBugCXJpA+GJpGyilKiSlB1V8L/3UYtjJC7aoO2tN3P4lpnx0O6IamzdWHOvrowRm4qsPj96RFQOw88dqaDkZEWoqpiwQlXEIzuQjcO6Lo6KYJHm8TyMwuU8iWg+Xy6Li/llmARskaQQXiS+sLz0C8Ely9yww+FLEwQxg34fZ5lVOJMJU0toH/7BaLoVkmk+SqtBY6Xlmqy6F1eC4eYlpEUaBimNo0UcBUF0mYT5Is7DiMXAkwUOlJBziaXrE0/O2GTb2kHGalFtxvP7sfVuApVmjkoUeIQ/WV4xjiQKkIZ7pISKgVW6JSurGwQ0B3ZbyfZYsRWVxWnE1T4Z8Z27SUHgKguOuigfbo/HbPR5gItrsIBUGmobPZbSrRKUm8ERxgtopF2fYkPBbd2r7Fss5HLqVrIpq4+DGeQ4YPpaEWkMkuC1U+q4j0KKu63af5pY3oiqd2W8lIqCPJ7Aond5Yx2fjnDJSxyUlVDX6GhWa7UTfTNyKf2NxINfSLXHpS4UPlBH3Edjwb9B/LqHH0ALp+IDjsFmzILJDNWinrT1y8nBI6Y1a4kBe9aI5mbfGsdwUDxqywZ7XEs/6AoX7/go4+C9fll9hE+eV5/rmTCzKc6zcy/lJ1VvC30RQBEuaXg+9BCfC/1syPLr6E863pL/8Bf5H5HfegBp+j//f5x/RzMHI2jW/xfgOPcT9BcfwKML+rD0aDYVBrndO+zd9A/kLlpMlKCn0F7pr07VM3b4AeVRS3rLBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">30e24435977e0b101f83b390f053afd4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:13:08</sys_created_on>
+        <sys_id>a92bbb25973e0b101f83b390f053afc3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:46</sys_updated_on>
+        <ui_id>32f065b3-1219-42cb-99f7-8140d645a174</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VSwW7bMAz9lULnwLCdImhyK1YU6GEt0LW9DIUhS3RMTJY0SU7qGf73kbGTDb31ZPGRfHyP5ihcn3yf4ou7jRH3Vux+vq8EWsboPQorOxA7gQm6KFbiIE3P8Th+CyAT6CsXrl695mdVZKqVdk+vBsHoOE3UoTF6I4e3LzeqFo0OsEjyMpCSBEHsxk+pNHiojKzBEP8zKBc0S0VNYbHVzbbIt2pdbtZlnpc310W9WddFqdcS9Ibqzp0Pi8VPjpmdwnDhpQ+rKPOVgI8EVgMNaqSJsBKdtOTIhUHsUugJIK/6yZrhUtGiTUQnuPYj4h/iLvKcCxsgRwrm5CWslv3NsGodKnjyCZ2dkSRrs/QoZ/rOPs7yefPQyN6k8+YJ6SPxgWfNrGKR1Pxo3fH5PPAe7cnfkjROSXOJZEoB6z5B5N8ABjoiqjrpPdp95YM74KmZtHTZ3lCQNcYdaSgfVyYVC89oRTK7J/zuBL/JgOziO9FQ83RyX/3uee7sY1FczaapIKqAPt0S3QEWcdM7X+fMFOfD0KAw0sAXxh7ON82JgX4yqv+howu/WOo/bPoL29X8Yh0DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9308772d97fa0b101f83b390f053afbb^sys_idNOT IN22828879973e0b101f83b390f053af44,2a828879973e0b101f83b390f053af3f,2a828879973e0b101f83b390f053af41,2e828879973e0b101f83b390f053af42,3806c879977e0b101f83b390f053afda,62828879973e0b101f83b390f053af43,66828879973e0b101f83b390f053af44,6a828879973e0b101f83b390f053af40,6e828879973e0b101f83b390f053af41,7c06c879977e0b101f83b390f053afdb,a2828879973e0b101f83b390f053af42,a6828879973e0b101f83b390f053af43,ae828879973e0b101f83b390f053af40,e2828879973e0b101f83b390f053af41,e6828879973e0b101f83b390f053af42,ea828879973e0b101f83b390f053af43"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>22828879973e0b101f83b390f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6a90ee1-4155-4091-a58d-659fa6049519</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>2a828879973e0b101f83b390f053af3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f0712a33-f2e3-4f4a-a53b-a62e9a7fdd0b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>2a828879973e0b101f83b390f053af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4424a165-0286-4df4-a096-061d87d3686d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>2e828879973e0b101f83b390f053af42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>898bd007-947a-4d6b-b5c5-8c4389527699</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer.full_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:00:36</sys_created_on>
+        <sys_id>3806c879977e0b101f83b390f053afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:00:36</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>24592b25-7d06-4085-b04e-d24e07ed1fa9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer_equipement}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>62828879973e0b101f83b390f053af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d16f6558-fc53-46fc-b867-0307b651f71c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>66828879973e0b101f83b390f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>932b16d0-8c31-41e4-866d-4bb7c3f76e34</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>6a828879973e0b101f83b390f053af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30a6217c-fda2-4e2e-b68a-d4f4e3323d77</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.activity_due}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>6e828879973e0b101f83b390f053af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8468abe5-4f30-4535-9f46-54fdf3006e85</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer_equipement.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:00:36</sys_created_on>
+        <sys_id>7c06c879977e0b101f83b390f053afdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:00:36</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7bd0fe7d-3654-4b0f-88ec-6c55458b619f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>a2828879973e0b101f83b390f053af42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e1aca79a-fc31-4ba9-a56b-14f1166a85a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>a6828879973e0b101f83b390f053af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>338091ee-8e5d-4c71-ab52-88d8de2dee58</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>ae828879973e0b101f83b390f053af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9b34e755-c624-48f6-800e-2515cb1095f7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>e2828879973e0b101f83b390f053af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7671b9cb-fc7f-4261-8859-44fa921c3ec0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.priority}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>e6828879973e0b101f83b390f053af42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>49080630-9315-4838-b226-649ac4e846f6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>9308772d97fa0b101f83b390f053afbb</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:45:25</sys_created_on>
+        <sys_id>ea828879973e0b101f83b390f053af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:45:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b3eb17fb-548e-42e8-8ea9-a0c39fcd6b3b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9308772d97fa0b101f83b390f053afbb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9308772d97fa0b101f83b390f053afbb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 16:46:56</sys_created_on>
+        <sys_id>30e24435977e0b101f83b390f053afaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 16:46:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9308772d97fa0b101f83b390f053afbb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 15:59:56</sys_created_on>
+        <sys_id>40283fad97fa0b101f83b390f053afc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 15:59:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9308772d97fa0b101f83b390f053afbb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 15:59:56</sys_created_on>
+        <sys_id>d8283fad97fa0b101f83b390f053afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 15:59:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9308772d97fa0b101f83b390f053afbb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9308772d97fa0b101f83b390f053afbb"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a notification to a technician when a repair request is assigned to them</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>repair_assignment_notification</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.activity_due","label":"Trigger - Record Created or Updated➛Repair Request Record➛Expected Completion","reference":"","reference_display":"Expected Completion","type":"due_date","base_type":"due_date","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"activity_due","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]}},{"name":"Created or Updated_1.current.priority","label":"Trigger - Record Created or Updated➛Repair Request Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"priority","choices":[{"label":"-- None --","used":false,"sequence":-1.0,"selected":false,"image":"","rawLabel":"-- None --","missing":false,"reference":false,"value":""},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"label":"1 - Critical","used":false,"sequence":1.0,"selected":false,"image":"","rawLabel":"1 - Critical","missing":false,"reference":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"label":"2 - High","used":false,"sequence":2.0,"selected":false,"image":"","rawLabel":"2 - High","missing":false,"reference":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"label":"3 - Moderate","used":false,"sequence":3.0,"selected":false,"image":"","rawLabel":"3 - Moderate","missing":false,"reference":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"label":"4 - Low","used":false,"sequence":4.0,"selected":false,"image":"","rawLabel":"4 - Low","missing":false,"reference":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"5 - Planning"}},"label":"5 - Planning","used":false,"sequence":5.0,"selected":false,"image":"","rawLabel":"5 - Planning","missing":false,"reference":false,"value":"5"}],"usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]}},{"name":"Created or Updated_1.current.customer_equipement","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer Equipement","reference":"x_2099780_juggle_0_customer_equipement","reference_display":"Customer Equipement","type":"reference","base_type":"reference","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"customer_equipement","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]}},{"name":"Created or Updated_1.current.customer","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer","reference":"x_2099780_juggle_0_customer","reference_display":"Customer","type":"reference","base_type":"reference","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"customer","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Repair Request Record➛Repair Number","reference":"","reference_display":"Repair Number","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_repair_request","column_name":"number","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null,"ah_subject"]}},{"name":"Created or Updated_1.current.assigned_to.first_name","label":"Trigger - Record Created or Updated➛Repair Request Record➛Assigned to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Repair Request Table","reference":"x_2099780_juggle_0_repair_request","reference_display":"Repair Request","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created or Updated_1.current.assigned_to.email","label":"Trigger - Record Created or Updated➛Repair Request Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":["ah_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Repair Request Record","reference":"x_2099780_juggle_0_repair_request","reference_display":"Repair Request","type":"reference","base_type":"reference","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":["record",null]},"attributes":{}},{"name":"32f065b3-1219-42cb-99f7-8140d645a174.item.field_name","label":"1 - For Each➛FDChangeDetails➛Field Name","reference":"","reference_display":"Field Name","type":"string","base_type":"string","usedInstances":{"aaddb7b5-af0c-4039-8f7d-40c53604a9c5":["condition"]},"attributes":{}},{"name":"32f065b3-1219-42cb-99f7-8140d645a174.item","label":"1 - For Each➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created or Updated_1.changed_fields","label":"Trigger - Record Created or Updated➛Changed Fields","type":"array.object","base_type":"array.object","usedInstances":{"32f065b3-1219-42cb-99f7-8140d645a174":["items"]},"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"Created or Updated_1.current.customer.full_name","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer➛Full Name","reference":"","reference_display":"Full Name","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_customer","column_name":"full_name","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]}},{"name":"Created or Updated_1.current.customer_equipement.name","label":"Trigger - Record Created or Updated➛Repair Request Record➛Customer Equipement➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_customer_equipement","column_name":"name","usedInstances":{"c2402a2e-92f7-4154-a3b4-e153685b07f5":[null]}}]</label_cache>
+        <master>true</master>
+        <name>Repair assignment notification</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Repair assignment notification">9308772d97fa0b101f83b390f053afbb</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a6a08f197be0b101f83b390f053af5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:47</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8a6a08f197be0b101f83b390f053af5d^sys_idNOT IN8e6a08f197be0b101f83b390f053af5e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8a6a08f197be0b101f83b390f053af5d</id>
+        <name>Repair assignment notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:47</sys_created_on>
+        <sys_id>8e6a08f197be0b101f83b390f053af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8e6a08f197be0b101f83b390f053af5e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8a6a08f197be0b101f83b390f053af5d^sys_idNOT IN026a08f197be0b101f83b390f053af8c,0e6a08f197be0b101f83b390f053af60,426a08f197be0b101f83b390f053af73"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Repair assignment notification">8a6a08f197be0b101f83b390f053af5d</model>
+        <model_id>8a6a08f197be0b101f83b390f053af5d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8a6a08f197be0b101f83b390f053af5d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>026a08f197be0b101f83b390f053af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=026a08f197be0b101f83b390f053af8c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Repair assignment notification">8a6a08f197be0b101f83b390f053af5d</model>
+        <model_id>8a6a08f197be0b101f83b390f053af5d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8a6a08f197be0b101f83b390f053af5d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:47</sys_created_on>
+        <sys_id>0e6a08f197be0b101f83b390f053af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0e6a08f197be0b101f83b390f053af60"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Repair assignment notification">8a6a08f197be0b101f83b390f053af5d</model>
+        <model_id>8a6a08f197be0b101f83b390f053af5d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8a6a08f197be0b101f83b390f053af5d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:47</sys_created_on>
+        <sys_id>426a08f197be0b101f83b390f053af73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=426a08f197be0b101f83b390f053af73"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8a6a08f197be0b101f83b390f053af5d^sys_idNOT INce6a08f197be0b101f83b390f053afc2"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Repair assignment notification">8a6a08f197be0b101f83b390f053af5d</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>ce6a08f197be0b101f83b390f053afc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8a6a08f197be0b101f83b390f053af5d^sys_idNOT INca6a08f197be0b101f83b390f053afc0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Repair assignment notification">8a6a08f197be0b101f83b390f053af5d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>aaddb7b5-af0c-4039-8f7d-40c53604a9c5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>ca6a08f197be0b101f83b390f053afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <ui_id>c2402a2e-92f7-4154-a3b4-e153685b07f5</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ca6a08f197be0b101f83b390f053afc0"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8a6a08f197be0b101f83b390f053af5d^sys_idNOT IN066a08f197be0b101f83b390f053afac,ca6a08f197be0b101f83b390f053afae"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">30e24435977e0b101f83b390f053afd4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Repair assignment notification">8a6a08f197be0b101f83b390f053af5d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>066a08f197be0b101f83b390f053afac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <ui_id>32f065b3-1219-42cb-99f7-8140d645a174</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VTXWvjMBD8K0XPxtjOES55KymFwrWFtteXo5i1tI7FyZJOkpP6jP/7reKPlr7dU7Sj3dmZsTIw0wXbBf9irr2XR832v94SJnXE6DwwDS2yPZMBW88SdgLVxXoYDg4hoLgy7uqnFfFY5ilvQB/pVEtUwo8jTQjprYL+9b8HeSOVcDhLsuBISUDH9sOXKymIN9+JepdnO74ptpsiy4rv3/Jqu6nyQmwAxZYIFVSoqPVu9vLFWuhtLB1y48QC/JhnnlaUfqKIIksYvgfUAml9DcpjwlrQZMi4nu2D6wggq+JRq37taKQORMdi77uXf2ljnmWxsUYyxHG6XMtyjm+C6xsI8EzUPHRubuWNkRz9FIXAGjoVDp+xqeHRBmn0NBKgUsu0UV2rH6Yk2EqwfC1COk8i0EajUfrso35uzPlpUXkr9SWU+VIZDmqtIAQnqy5EPQNDhS0RlS1YK/WxtM6c5GWYtLTpUVGR1sqcaWl8kCnwKDylXCG9JfzmAr+Ck9HFPdHQ8Jgw3/uDAu8/vFCI5Z8uKpmczR7KKYY4wp204ZoWnHCWO77FNz5xr5ly6UnCS8Tuln9GvOjpBUn+GTob9zuK/8DGf564o7ZjAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">38e24435977e0b101f83b390f053afd7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Repair assignment notification">8a6a08f197be0b101f83b390f053af5d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>32f065b3-1219-42cb-99f7-8140d645a174</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>ca6a08f197be0b101f83b390f053afae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <ui_id>aaddb7b5-af0c-4039-8f7d-40c53604a9c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYNnWaA2J/YtcBCgQNoATZBLGwgjkoqJUqQqUnZcw//eoRbbaN0laI69mW+290bz4B0xratbZx/MlbXyWZPFp6eASO0x/L0jGipBFoQZzaWTRucdEJA1qNYHSikUn0g7ga5e8IkzGObS1gq2j7/PYiupeCOGqTU02NuJhix2P4Qk900olNGcRSyJZ0lMaXyZRsUsKaKYJyAgwYYKCqEwdTnSndx2SPBLHW5be9y6Rurn4X07dLkfQdNwzyqiAREvTmgukE8JyoqAVKA5ONNsD0gjgN9pdQRWUjtsR3zyi5XfcGCcZT6xFCiRiT54eObD9nq4vAYHSKVlrm2GVLYykgnbL4eLElrllqdYn3BXe6l9iYNCjdVGtZX+0G+EHBqMHwuR1iIJUXulnvqgo7xfmc3HkeWN1N1WhqAyDNThBQ53V7TO89kRoUSFjfIK6ho3mteNWcuuGLlU4bPCR1gqs8Gh/j5CYJ54iIuF8Abx6w5+hEZ6Fe+xDRb3NAuwkuXdxWI7XJMg+4DYrV0qPLajSNxu/rX1FHvJg7i8348vYY2s3RVOXotBxz742QAnt7/bJXFJZ1mRTKM4mk/TmBXT+by8mF5GKeWzNIPoIg2lE1XYOaA7uv3+c0tpwkcr5OcM85atX+eyOWRlFtHsvMvS2TmXnfHXK60V/8Fa/rv+pbMopf+t9c/WkjbvDTFo64a/obOevI36mYddM2mR2oPH3o3/QD6wxeOS7BTamOaLF3XE9t8BQ5aPUssGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8a6a08f197be0b101f83b390f053af5d^sys_idNOT IN026a08f197be0b101f83b390f053afc5,066a08f197be0b101f83b390f053afc4,0a6a08f197be0b101f83b390f053afc3,0e6a08f197be0b101f83b390f053afc5,426a08f197be0b101f83b390f053afc4,466a08f197be0b101f83b390f053afc3,4a6a08f197be0b101f83b390f053afc5,4e6a08f197be0b101f83b390f053afc4,826a08f197be0b101f83b390f053afc3,866a08f197be0b101f83b390f053afc5,8a6a08f197be0b101f83b390f053afc4,8e6a08f197be0b101f83b390f053afc3,c26a08f197be0b101f83b390f053afc5,c66a08f197be0b101f83b390f053afc4,ca6a08f197be0b101f83b390f053afc3,ce6a08f197be0b101f83b390f053afc5"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer_equipement.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>026a08f197be0b101f83b390f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7bd0fe7d-3654-4b0f-88ec-6c55458b619f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.activity_due}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>066a08f197be0b101f83b390f053afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8468abe5-4f30-4535-9f46-54fdf3006e85</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>0a6a08f197be0b101f83b390f053afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30a6217c-fda2-4e2e-b68a-d4f4e3323d77</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>0e6a08f197be0b101f83b390f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b3eb17fb-548e-42e8-8ea9-a0c39fcd6b3b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>426a08f197be0b101f83b390f053afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4424a165-0286-4df4-a096-061d87d3686d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer.full_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>466a08f197be0b101f83b390f053afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>24592b25-7d06-4085-b04e-d24e07ed1fa9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>4a6a08f197be0b101f83b390f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6a90ee1-4155-4091-a58d-659fa6049519</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>4e6a08f197be0b101f83b390f053afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>898bd007-947a-4d6b-b5c5-8c4389527699</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>826a08f197be0b101f83b390f053afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f0712a33-f2e3-4f4a-a53b-a62e9a7fdd0b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>866a08f197be0b101f83b390f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>338091ee-8e5d-4c71-ab52-88d8de2dee58</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.priority}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>8a6a08f197be0b101f83b390f053afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>49080630-9315-4838-b226-649ac4e846f6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>8e6a08f197be0b101f83b390f053afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7671b9cb-fc7f-4261-8859-44fa921c3ec0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer_equipement}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>c26a08f197be0b101f83b390f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d16f6558-fc53-46fc-b867-0307b651f71c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.customer}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>c66a08f197be0b101f83b390f053afc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e1aca79a-fc31-4ba9-a56b-14f1166a85a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>ca6a08f197be0b101f83b390f053afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9b34e755-c624-48f6-800e-2515cb1095f7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8a6a08f197be0b101f83b390f053af5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>ce6a08f197be0b101f83b390f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>932b16d0-8c31-41e4-866d-4bb7c3f76e34</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8a6a08f197be0b101f83b390f053af5d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:47</sys_created_on>
+        <sys_id>866a08f197be0b101f83b390f053af6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8a6a08f197be0b101f83b390f053af5d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_id>866a08f197be0b101f83b390f053af93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8a6a08f197be0b101f83b390f053af5d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:47</sys_created_on>
+        <sys_id>8e6a08f197be0b101f83b390f053af7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8a6a08f197be0b101f83b390f053af5d"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>9308772d97fa0b101f83b390f053afbb</sys_id>
+        <latest_snapshot>8a6a08f197be0b101f83b390f053af5d</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9308772d97fa0b101f83b390f053afbb^sys_idNOT IN5e6a08f197be0b101f83b390f053aff3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"5e6a08f197be0b101f83b390f053aff3","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>9308772d97fa0b101f83b390f053afbb</plan_id>
+        <snapshot>9a8a8cf197be0b101f83b390f053af44</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-19 17:19:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e6a08f197be0b101f83b390f053aff3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-19 17:19:48</sys_updated_on>
+        <trigger display_value="">9e6a08f197be0b101f83b390f053aff0</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9308772d97fa0b101f83b390f053afbb"/>
+</record_update>

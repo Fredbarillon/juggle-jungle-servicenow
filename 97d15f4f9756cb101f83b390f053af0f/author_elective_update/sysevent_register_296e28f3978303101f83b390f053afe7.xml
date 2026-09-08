@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_2099780_juggle_0.recurring_class_remin</event_name>
+        <fired_by>Recurring Class Reminders Flow</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix>recurring_class_reminder</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 11:22:00</sys_created_on>
+        <sys_id>296e28f3978303101f83b390f053afe7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_2099780_juggle_0.recurring_class_remin</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sysevent_register_296e28f3978303101f83b390f053afe7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 11:23:26</sys_updated_on>
+        <table>x_2099780_juggle_0_course_event_planning</table>
+    </sysevent_register>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</application>
+        <file_path/>
+        <instance_id>a5adbad2ff25c718c80bf8e4fc4fd9b3</instance_id>
+        <instance_name>dev410318</instance_name>
+        <name>sysevent_register_296e28f3978303101f83b390f053afe7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><caller_access/><derived_priority>100</derived_priority><description/><event_name>x_2099780_juggle_0.recurring_class_remin</event_name><fired_by>Recurring Class Reminders Flow</fired_by><priority>100</priority><queue/><suffix>recurring_class_reminder</suffix><sys_class_name>sysevent_register</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-07 11:22:00</sys_created_on><sys_id>296e28f3978303101f83b390f053afe7</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_2099780_juggle_0.recurring_class_remin</sys_name><sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package><sys_policy/><sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope><sys_update_name>sysevent_register_296e28f3978303101f83b390f053afe7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-07 11:23:26</sys_updated_on><table>x_2099780_juggle_0_course_event_planning</table></sysevent_register></record_update>]]></payload>
+        <payload_hash>1746547546</payload_hash>
+        <record_name>x_2099780_juggle_0.recurring_class_remin</record_name>
+        <reverted_from/>
+        <source>abd15f4f9756cb101f83b390f053af18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 11:23:26</sys_created_on>
+        <sys_id>1b0fe437978303101f83b390f053af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a07b9bdb720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 11:23:26</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>d70fe437a9830310bc875e3ed19eac17</update_guid>
+        <update_guid_history>d70fe437a9830310bc875e3ed19eac17:1746547546,5abea0376d830310ace891878ea78c38:1743447580</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 12:12:02</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>1e9989bcfbbd4bca9bb489e6f1a8ac91</sys_id>
+        <sys_metadata>296e28f3978303101f83b390f053afe7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2099780_juggle_0.recurring_class_remin</sys_name>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_parent display_value="Course &amp; Event Planning">8e76bcb697e603101f83b390f053af5f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_scope_delete display_value="">63de7404f1084b3a8de1b46bdb4426c1</sys_scope_delete>
+        <sys_update_name>sysevent_register_296e28f3978303101f83b390f053afe7</sys_update_name>
+        <sys_update_version display_value="sysevent_register_296e28f3978303101f83b390f053afe7">1b0fe437978303101f83b390f053af18</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 12:12:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

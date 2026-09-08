@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1643817000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a reminder for lessons at the appropriate interval</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>recurring_class_reminders</internal_name>
+        <label_cache>[{"name":"3202b7e2-d5fc-472b-836a-58c6e3d28ae0.next_class","label":"4 - Calculate Next Class Occurrence➛next class","type":"glide_date","base_type":"glide_date","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":[null,"ah_subject"],"fbe3dff1-c774-4a95-9228-dc28c3b0a8b3":["next_class"],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":[null],"7d1001df-ff5f-42c2-830c-c5cb9ace755c":["next_class"]},"attributes":{"uiType":"glide_date","uiTypeLabel":"Date","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1174ae5c-a92d-490c-8830-dc9236468e53"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to.email","label":"2 - For Each➛Course \u0026 Event Planning Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":["ah_to"]}},{"name":"3202b7e2-d5fc-472b-836a-58c6e3d28ae0.is_occurrence","label":"4 - Check Recurring Class Occurrence➛is occurrence","reference_display":"is occurrence","type":"boolean","base_type":"boolean","usedInstances":{"37538207-9479-4c7d-a65d-26812f5cfca1":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8cbe92a4-3e10-4c0b-9fa3-b43c038a2152"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to.first_name","label":"2 - For Each➛Course \u0026 Event Planning Record➛Assigned to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":[null]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item","label":"2 - For Each➛Course \u0026 Event Planning Record","reference":"x_2099780_juggle_0_course_event_planning","reference_display":"Course \u0026 Event Planning","type":"reference","base_type":"reference","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":["record"],"319434f8-1712-4a2e-88ee-aece4e3524d4":["record"],"a5112dca-3cc5-424d-905e-f4cc3608439e":["record"],"3a1841f8-74e6-4bd4-a4f4-1cb4180d9d9e":["record"],"fbe3dff1-c774-4a95-9228-dc28c3b0a8b3":["record"],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":["record",null],"60430d49-38ee-47ff-af37-4343bc52bac0":["record"],"7d1001df-ff5f-42c2-830c-c5cb9ace755c":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"trigger.run_start_date_time","label":"Trigger - Run Daily ➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["target_date"]},"attributes":{"test_input_hidden":"true"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.date","label":"2 - For Each➛Course \u0026 Event Planning Record➛Starting Date","reference":"","reference_display":"Starting Date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"date","usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["start_date"],"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":[null]}},{"name":"86164f2e-c302-4378-af53-71a758221aed.Records","label":"1 - Look Up Records➛Course \u0026 Event Planning Records","reference":"x_2099780_juggle_0_course_event_planning","reference_display":"Course \u0026 Event Planning","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to","label":"2 - For Each➛Course \u0026 Event Planning Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"assigned_to","usedInstances":{"a5112dca-3cc5-424d-905e-f4cc3608439e":["record"],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":["ah_to"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.next_class","label":"2 - For Each➛Course \u0026 Event Planning Record➛Next Class","reference":"","reference_display":"Next Class","type":"glide_date","base_type":"glide_date","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"next_class","usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["current_next_class"],"8e5ec605-505d-41db-aed8-49d8c687f332":["condition"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.end_date","label":"2 - For Each➛Course \u0026 Event Planning Record➛End Date","reference":"","reference_display":"End Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"end_date","usedInstances":{"8e5ec605-505d-41db-aed8-49d8c687f332":["condition"],"34864be4-eb14-49e9-956e-162795a51e6b":["condition"],"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["end_date"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.recurrence","label":"2 - For Each➛Course \u0026 Event Planning Record➛Recurrence","reference":"","reference_display":"Recurrence","type":"choice","base_type":"choice","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"recurrence","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"None"}},"sequence":0.0,"label":"None","selected":false,"used":false,"image":"","reference":false,"rawLabel":"None","missing":false,"value":"none"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Weekly"}},"sequence":1.0,"label":"Weekly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Weekly","missing":false,"value":"weekly"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Monthly"}},"sequence":2.0,"label":"Monthly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Monthly","missing":false,"value":"monthly"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Quarterly"}},"sequence":3.0,"label":"Quarterly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Quarterly","missing":false,"value":"quarterly"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Yearly"}},"sequence":4.0,"label":"Yearly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Yearly","missing":false,"value":"yearly"}],"usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["recurrence"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.name","label":"2 - For Each➛Course \u0026 Event Planning Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"name","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":["ah_subject",null],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":["ah_subject",null]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.preparation_status","label":"2 - For Each➛Course \u0026 Event Planning Record➛Preparation Status","reference":"","reference_display":"Preparation Status","type":"choice","base_type":"choice","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"preparation_status","choices":[{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"In preparation"}},"sequence":0.0,"label":"In preparation","selected":false,"used":false,"image":"","reference":false,"rawLabel":"In preparation","missing":false,"value":"in_preparation"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Completed"}},"sequence":1.0,"label":"Completed","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Completed","missing":false,"value":"completed"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Cancelled"}},"sequence":2.0,"label":"Cancelled","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Cancelled","missing":false,"value":"cancelled"}],"usedInstances":{"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":[null]}}]</label_cache>
+        <master_snapshot>fd7340c6977e8b101f83b390f053afc5</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Recurring course reminder</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>927380c6977e8b101f83b390f053af5c</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 08:24:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3895331973a8b101f83b390f053afb4</sys_id>
+        <sys_mod_count>100</sys_mod_count>
+        <sys_name>Recurring course reminder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Juggle Jungle Operations" source="x_2099780_juggle_0">97d15f4f9756cb101f83b390f053af0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name>sys_hub_flow_c3895331973a8b101f83b390f053afb4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:47</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>2638550497d783101f83b390f053af72</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c3895331973a8b101f83b390f053afb4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c3895331973a8b101f83b390f053afb4"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <published_version/>
+        <run_period/>
+        <run_start>2026-08-20 11:27:59</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>927380c6977e8b101f83b390f053af5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:59</sys_updated_on>
+        <time>1970-01-01 16:00:00</time>
+        <timer_type>11</timer_type>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:927380c6977e8b101f83b390f053af5c^sys_idNOT IN5e7380c6977e8b101f83b390f053af75"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:927380c6977e8b101f83b390f053af5c</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month/>
+        <run_period/>
+        <run_start>2026-08-20 11:27:59</run_start>
+        <run_time>1970-01-01 16:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth/>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('927380c6977e8b101f83b390f053af5c');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:59</sys_created_on>
+        <sys_id>5e7380c6977e8b101f83b390f053af75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:59</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">927380c6977e8b101f83b390f053af5c</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c3895331973a8b101f83b390f053afb4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c3895331973a8b101f83b390f053afb4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c3895331973a8b101f83b390f053afb4^sys_idNOT IN4f895331973a8b101f83b390f053afb9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c3895331973a8b101f83b390f053afb4</id>
+        <name>Recurring class reminders</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 08:24:48</sys_created_on>
+        <sys_id>4f895331973a8b101f83b390f053afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 08:24:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4f895331973a8b101f83b390f053afb9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c3895331973a8b101f83b390f053afb4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c3895331973a8b101f83b390f053afb4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c3895331973a8b101f83b390f053afb4"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c3895331973a8b101f83b390f053afb4^sys_idNOT INa54adb71973a8b101f83b390f053af6e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 08:27:59</sys_created_on>
+        <sys_id>a54adb71973a8b101f83b390f053af6e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:32:51</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SS2vcMBD+K0XnjZF30zT1rRAWemgDzZJLCGZsjXcFo0dleRMn7H/vyNaaPCp0mYe+F3p4FQQNkqjEThsUK6FtxGCBdqNH7u5JK6zjPDNgFUQXRlHFMOBKdMGZHRpPEHm5A+q56YLCIKpSypU4Ag14N/Y/FWMxggWTUDPeNOWy/P5NXsiS7xd5XUnJl6dK9ww83ucl7rQHTSqgFdXD40p4CIwWE9frh5FOdBtQl6ha2W7WfKRcX1+WzdWmKddqA4hfGfCD9/fq4n8SeOsNnyNahWox/imegKBuLY3LxoHTna0YeO71C2aogB2y+Db7XMo6Z3C273SLtz5qZ+dOhIbO2TgajP09O0jpYQcDxTfpDT3joU+ak4osqbs7uKc/Z8KttpPBPCTXAi0VxBh0M0TsU+JIaBioNuC9tvvaB3fU02PWYooptqIj98Skvd7bAtokvOCIoNhy/2Zq30PQycUvhuHHp8l9/XdIvLOPrLieTZ+Wj7HVSPlb9W3QPv5gguP5H54e/wHc7r8T3AIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c3895331973a8b101f83b390f053afb4^sys_idNOT IN410e5779973a8b101f83b390f053af70,7cfdb3f997fa8b101f83b390f053af43,7d0859c097d783101f83b390f053af8c,d5665d00979783101f83b390f053af13,ffd711c097d783101f83b390f053af67"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 08:44:20</sys_created_on>
+        <sys_id>410e5779973a8b101f83b390f053af70</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:27:19</sys_updated_on>
+        <ui_id>86164f2e-c302-4378-af53-71a758221aed</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W32/TMBD+V0KeQKoqd+26rU+gwSQetiJWTUKDWU7ipAbXDrbTrpv2v3O286Nrs9GVgUDiKcr5fPfdd9/ZvrwNWRKOQpQOECK9/cMDhPp9hIbDfkx6UdQfxhGK9o/CTijIjIKnlspgs8wpmOaEF7WN6BhMCdM5J8uLcoUERgY3YI+njCeKinB0+aUT5kRBNENVOLpdW7KhMScR5bD9eCpZbDNtC7LaeA6IgolH2QLcfUaQuQwvVWKx9DshvTZUJBTSpYRr2glnRCTESLWsLYqSZCx4Y5gyYSBaaJ2vNbuB0P0965dSKCumfq3+xSVH3uwxaCj+tkZfs9ZCcAkV3XUa/xvrT9b9E7q6oXcH5CY0JQU3x7vl7D01557N6Qsc54ZJaHHYt/STiJesxJIXM3HmWxTWCC9alOVX3j4gsEIDsTS3zbPdKFuTnk/l4mPF/AkTDle5yGVMeP1HjFEsKozl5TZME5wyyhPMBGfCZjKqsFKhnM4gA56RPGciw7mSc+aiQi2zbsbhp5tyubBcsEx0SWwr74KISPcE7G+d+YIoZlk4hTCwuWMTTmFrmQ/rWLHc4AVLMmqa7JVXIs2C8G9t66W66hly5YV3ToD4e2Er9kSXXGHXFuvgc74BvHNa0mI77mYvPnh09vbX5sy3dUUdAgYLx5xovXlI3Fvb7aA4sb0KnIw6WwOuNo+tWoNo+VAN5Wnh9SB8jkrhz3ZiHKKnnRj1QD1pnjYHxQrnF+bkN45D2/z9TMaeiZ9oefDoPTLsNTqA7mBFNRCoV7TcQ2hTxN64m3rfC0MzV/a2+Kqdp+Q6+FgDbEVdqpfVOUrpDp5NuoM/Il0gGD14DfQ6fvWZb4Hfo+5fPYsPH38HoUYJsRQJs4hW5WsxzplZusfQ5wJiJLEslKZXisaFchy98HYhBb1qjufx2UTOpFJy8formROPcZTpbkQzJgQwNE4rj5ev1nygwtXVK4gH1NAEG/n+/Gw8eXf6YfKp5QX5d6Pd8V272pdte9q6ua3R1et21VY94Z5x6NH/G2v7md7qYnpcBIOo6bcP18z0Nd5DR0cHhwh/LbKMU4ywnxJM5xYD9MIpfnO+jp1bYCdobxi8s97Bh8Z7N31PLLx7z7EtSru3ebPUUtXud+0Vhv75V9jfeVEBIMah29iTrkEqjpU5HLCFdguKCO1j7XytffkBiXVM4oUQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=410e5779973a8b101f83b390f053af70"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Calculate Next Class Occurrence">b13dbf79973e8b101f83b390f053afd7</action_type>
+        <action_type_parent display_value="Calculate Next Class Occurrence">0be1af7d97f68b101f83b390f053af5b</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>b13dbf79973e8b101f83b390f053afd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:03:51</sys_created_on>
+        <sys_id>7cfdb3f997fa8b101f83b390f053af43</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:27:19</sys_updated_on>
+        <ui_id>3202b7e2-d5fc-472b-836a-58c6e3d28ae0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WW2vbMBT+K8XPUSbfIitvg1IYbCusXV9GMbocpQLfastts5D/Pim2k16yLCRdx6CPPjq379P5fPRj4WnpTb3QDyVXhFISQsJ97Ksk5CHFCschU1J4I69gOVjPxrDapJIZsLY7lrXOuFj4KvJlNAlQHMWAokAIRH0/RCKAOI6TGBjlY20gH7vQ5dIGS91UGZtf9TmsRdzoTNZQeNMf1yOvYrUtaaD2potnR2ZeQZoxDpkNPLUJP1zq3DW0L5ghdoXmpEezDaGrZG2zTEtY2VLTVSpr6TrzRx48GCgk2MqKZQ2MvJwV1rOs597U1K011MDkeZHN1x43ujAd5Jw9NPqnLRFh56fAYhQ9HevPtKdqYKnUAs4ro8uisxjGs4HCMmvz4muHxJEMirWZeURy29h8ULmWXRN9R+riprz/NhQ808UKXX+YlYJl6y9mTK15a6BxF9Pqy99R1B193nJNkEFuq6c5qypdzNKqLu/0qqIFkI9XqcYqK+9tp42eFWMmHFo3O2x8Zu2nK/MVq7WD/sWmscGu4vdC37bwyY0BsDCgQlFEKCgUiRgjJiYCCUgkjWIiQ0y95Yrm9LZ1ADvCemrSjl3r0IhaV+ajbeEOehaWo144hO6aNXgknBpEW3e3e5hwNgm2yeeITIfJ7sJOQTEbNLcHD0PgEyK2kdNrrhkK9FILXktqCcb/u9jW3DzV2PpO3kRgJCFRoKhEE0wIisJJjGhAKAoTKjiRMAk5PlpgOJIgaCIoiUkSPh8sTjYzZLMes5eG8L+7m/aAM8Tahp5tpkcI/7SXot1i6S3vi+lfLCZGk4gQniCfU46iOFaIk4DbEcVxTImPacCP1k20c9AY3kxV9+c1aWEHJhUZa5oDFbRJ8OoaGuSzB6ohrId14ro6GWDtgvxCUhs1he+vvBdi2qqjN1s9EjCnykfJRNm3nR9RlGCYoEQBnYjAVyGXB0vo+hfnMoXuFg0AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7cfdb3f997fa8b101f83b390f053af43"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:00:57</sys_created_on>
+        <sys_id>7d0859c097d783101f83b390f053af8c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:45</sys_updated_on>
+        <ui_id>7d1001df-ff5f-42c2-830c-c5cb9ace755c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FUNnS9A7sm9FUwM9NCnSIpckEChyZbOgKJWinLiG/71LibKdNE2DwEBRoLrtch8zu0PqZutw5sydGJgfzIKURkEUhb4fZnFQpFERhCwiAIEzdSSpACMV0FoxtNdEdMax3QZlHLA4Dd0kTsCNQ0rdWRBELg0hSZIsATIrPK6h2u0wj/G2EWRzbdPRQ1dcMAXSmd/cTZ2GKOykQTnz7ZMjvWkgF6QAgYnnNe0qkHry8RxrvJbFmH010nhKy/RAm9nqOTdOPDJ4An/qwIMGyQDblUS0MHUqIhnRtdo4c606dCgg7FKKzT5ixaUemFbkoeU/sH7sm7gSkBq1U9ibuZ3QOJyaU7hsNK/l4NGkEOPkatFV8mKgYGYLJemEPppt12I9aAxkA2JAWH5Z1fdXY78Flz07i1bUlIi9RbRWvOg0tGYdIKAfSkWahstl3qh6zftkhFJ5S4GGV4r6Hnu2fCk9Qg1uDwdEvAX6z3v3NVHckPiEZTB515PPv3em70DDAs57zj3hvF8UhrZU8Ua/w8JrsDB3UyvjInlJAHR22PdRzYOUH/LQn83OMj//1i2XeO7ntO4UjhDWBg1uRUrk/auK3/dhk9sOe6aTDyZ68vkQ/TaFfzUYJxcDxtfye5T8G75W4498VuLJySSe/SWJW0T/mMb/pGw/fPFpO9p0L+b2SNUS95lTQdrWyDNi2y0WCIszCF2WlNSNz8LCzaKUuElGU4hYmBHwvUPac8/2aYq+8V5AhVA0TAYw01dPaCyw4CBY+8zIxothG+Rr22D//p/sdgSp33//fwMn/A3c/QSsAl1BzwgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7d0859c097d783101f83b390f053af8c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 08:53:49</sys_created_on>
+        <sys_id>d5665d00979783101f83b390f053af13</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:45</sys_updated_on>
+        <ui_id>2fefc99e-89ec-4785-9e0a-9f8027c7cb0d</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d5665d00979783101f83b390f053af13"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Fire Event">80a30edeff30311077a95dac793bf19b</action_type>
+        <action_type_parent display_value="Fire Event">15e10e5eff30311077a95dac793bf11e</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:00:16</sys_created_on>
+        <sys_id>ffd711c097d783101f83b390f053af67</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:45</sys_updated_on>
+        <ui_id>60430d49-38ee-47ff-af37-4343bc52bac0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2W227bRhCGX4XgtSjsiSfdBXVSBGiTIE5zkwbEcndW3oAiFR4Uq4bfPbMkdbIq2XDsFC16Q2CXuzPzz8zH4acb32p/5idKcgIajOGEU0riWKahlipOeW5oCv7EL+UC8CSsoGyzfjHxV7Lo3GbEmUhozNNYxHifUJPwnKfEkJBLEwk8qm2zLOT643jjOmMkTeOEZF+6+byAjExVIZvGK6vWGqtka6sSr6krW+gaSn/26fPEX8oaHbdQ+7ObO6/a9RKyQuZQoPX3YADfKBfjQ/Vt7r50Ak/odU5wr94zX9XahUMnPly3UGpAd0YWDUz8hSy1bKt67c/ausONGqR+Wxbr7Ykri65m/gU0tgbtXa6bFhZeH4HXXsnWa66qrtBeDp5xJ3xn9Lqxf2EUnE32Apn5zboZYq1hbhuXo7332Zj+jT7vfX+o3qW5sgreLvvlzHdSZV6cMquqoluUb4YEudqCkV3RbmqLO12DLmHp8uEUjnLN5VX1bVubV7bsUze+LColi+1Ktm1t866FxpW6sx8w87/9TXWhgIWLbiGXS1vOs2VdrWxvFqNcTOcFLqamqL5hOI2dl1OpnMYpFkZOX+H+Rb/9UdbWCf4dzfQSB493at3ZP0r7tYPXrqUACAcdmyCWQgRChHmQ54IHioRpKgljhjL/tq9B9rVz0oZUjUnJhkTjgUbVdtm+wLhWMOq/nYxcKnKub6XY9WkNCltxj8mbG2oE1SJiQShCCARTKkgpxQgZhGGYhCDTfGqx425vjwF9NHsXlepcSbzXFxv6HqBiR+4o466sET09Ws+s3sHHngK+X12rDO69Kv8CqvVMXS2QQ/BgILJH4gyCJ4g7y9djcBoEPRFNh/V6dp4OC3hAlKFKhpTxgPFYBSJVSZAIwAdyxUSaKKaie4ka8nofVmfHgYx3/bep+erk3MpU1dVYn+EriSUvS0zcMVC/9Me8PztCWDR+49/tTj8Otg8uPO/NMJ0eKu3g8rHUkbR+uRl8I2j8PGjjzhFpW2AS8s8A87Tz5yDpzw7MQR0OeEmZECZKkiBnUgciiQROIJIEMRWEYQswHvIfnkA6OdtP+a5/sGcXdA+VJ5wpl1iMnpKHhrS5+G7jwKPHgY6N3myMj00uHtfk4zh5Ua69PgPDD1wNTVWsoPHaypPe1tUeEeQ/wcS2Qs/OwzaHByxEIUnxw2oCHSX4r0MNCyRNk4AxnlMdKcGi9MdZEGcbzxy2GPspLNwf0jEL7DjQEyyE/7Pw72PBiEhwFceBwM7A/6gE50IMYcBDbWKhYxUl9NEsfP4O3uxuHzMQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ffd711c097d783101f83b390f053af67"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c3895331973a8b101f83b390f053afb4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c3895331973a8b101f83b390f053afb4^sys_idNOT IN881e5779973a8b101f83b390f053afdb,925f9775973a8b101f83b390f053af59"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">041e5779973a8b101f83b390f053afda</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 08:44:32</sys_created_on>
+        <sys_id>881e5779973a8b101f83b390f053afdb</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:45</sys_updated_on>
+        <ui_id>1f41d462-545e-42cc-9113-c2e55585ea9b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51Sy27jMAz8F50Tw4/UedwKLAr00C3QFr0UhUFLdCJUlrSSnNQ1/O+lYie76HFPNofkzFDkwEwXbBf8i7n1Xu412729L5jUEaP/gWloke2YDNh6tmBHUF2Mh2FTZuWqyXHJizRfror1ZgnNTbFcZ7C+2eR5BiiSJ+TGCT+O1Cqktwr61/9n4AephMPZpAVH3gI6tht+pEJvsVJQoyKhmYH6paAw24pmm6VbXuRlkadpvllldVnUWS4KEiyp7tJ5Pw/94w0iO4Xuykuf6CJPFww/A2qBJNSA8rhgLWgBwbie7YLrCHAI4lGr/lpxkDoQHYu1n15+EXeWprGwQZqI45S8htX8kBPMD0ZyfLRBGj0hAWo193Cjulb/nuzHFWADnQqXFRDSeeJDGz1HF7Ol5vlgTk8XwTupz/PNSWU4qGsEIThZdwF9XAMqbImoasFaqfeVdeYoz83kpU32ioKkUeZEovHcEuDReEJPBMkd4b/O8Cs4Gad4IBpqHs/TV3+6qDvNMTuupqGpwHMnbbgluiPO5sb3eK8Tk58OQyCXngRfInZ/ufKY6GnJkv8LnYz7iFb/YuM32JZwGi8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d65f9775973a8b101f83b390f053af58</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>1f41d462-545e-42cc-9113-c2e55585ea9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 08:50:09</sys_created_on>
+        <sys_id>925f9775973a8b101f83b390f053af59</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:45</sys_updated_on>
+        <ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V207cMBD9lZWfd6NcNit23xAtElKBtiCkqqXRxJnsWnXs1HaA7Sr/zjiXBRUqWtSnqi9RfOyZOWfmONkx3bi6cfZSH1or1oqtPl9PmVAeo/cdU1AhWzGuVSGc0IpN2Q3IxmO7XVTOo2K+iGfpPMXZPOZ8toyiZMZjTNP0IEVY5oFwWAWoiqwAh217cvH29P3lp69nH14X/6UJwwS7Z/EnGRTeuYxLsLZtSUQhbC1he/UvaOEbIQuDw/BqMDQzh4atdj9tuW2NmYQcJUm+cEaoNYWLglZLSMs0ClOexIskDsP4YB7liySP4iIBnC/o3Bh49MgLz9jDFyHIjum1KTyXOJwyok3ikeqVIC1OWQWKOqHNlq2caQgwCMW5ktv9iY1QjrIxf/bOih/oM4WhP1kiCePY7+6X2TDZHuYbLTie1x23DnGQyyGGa9lU6qyX4D2BJTTSjZ4gpLGUD2tP2tMYOJUXG337cSx4LFQncNiUmoPcr8BRG/LGofXTQIkVJcoqqGtqTlYbfSO6YOJSBWtJi6CU+paK+tsYAPfEA+oRBMeEv+ngKzDCqzilNBRME7SZ5UbUo7auOGu7rmTfG8+n1zcoyfpm0IE+7JDK3OBAup0+vfVZBzxc/SPvvYlFI9BOBL05IeUE+jRPLtcLp/+GfcsQymjJo+ftC8lz9p2865CnJh7V/sLJ0QtOHpDfsnKa/nfyYyd7mjlYwbPuH0Tp/Hfh1Va+9pbtS9jeQwVyYYnJpcdOxv+c39jS1AV/DN1q881reMDae4qqGYwxBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c3895331973a8b101f83b390f053afb4^sys_idNOT IN04d7158097d783101f83b390f053af23,2aa163f997f68b101f83b390f053af89,3d104c8e973e8b101f83b390f053af7f,48d7158097d783101f83b390f053af23,4cd7158097d783101f83b390f053af24,7e43c886977e8b101f83b390f053af21,84d7158097d783101f83b390f053af24,b243c886977e8b101f83b390f053af22,ca6fc9cc975783101f83b390f053afbb,eaa1ab31977a8b101f83b390f053af7c,f643c886977e8b101f83b390f053af22,f9104c8e973e8b101f83b390f053af80"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:00:00</sys_created_on>
+        <sys_id>04d7158097d783101f83b390f053af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:00:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8c8785c2-e558-4f18-82c0-f2faf3d24968</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{trigger.run_start_date_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 09:00:16</sys_created_on>
+        <sys_id>2aa163f997f68b101f83b390f053af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 09:00:16</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>cbb1b72b-f95b-4881-adb2-d9887b4a8064</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>5e978130-fa20-4a1a-89bb-6944b42cc37b</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:13:12</sys_created_on>
+        <sys_id>3d104c8e973e8b101f83b390f053af7f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:56</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-02 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>25280a47-bb55-4f2d-94a7-392397630393</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.preparation_status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:00:00</sys_created_on>
+        <sys_id>48d7158097d783101f83b390f053af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:00:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d6f3d196-e1f9-4f9e-9380-348479b2dae6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{3202b7e2-d5fc-472b-836a-58c6e3d28ae0.next_class}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:00:00</sys_created_on>
+        <sys_id>4cd7158097d783101f83b390f053af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:00:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d8e95a65-7299-43ea-ae08-73ef5581de14</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:12</sys_created_on>
+        <sys_id>7e43c886977e8b101f83b390f053af21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>969493ac-21a8-4868-92aa-19c42a4ff365</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:00:00</sys_created_on>
+        <sys_id>84d7158097d783101f83b390f053af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:00:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>65736d90-25cb-4a44-9ddc-a1b44acee3f9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:12</sys_created_on>
+        <sys_id>b243c886977e8b101f83b390f053af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e5241a76-9696-4d5f-9f70-44319f69ca87</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{3202b7e2-d5fc-472b-836a-58c6e3d28ae0.next_class}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 08:23:17</sys_created_on>
+        <sys_id>ca6fc9cc975783101f83b390f053afbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:23:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ebb31659-2a9e-4fd0-b9be-f7d5cb8bd632</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>cbb1b72b-f95b-4881-adb2-d9887b4a8064</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 09:00:16</sys_created_on>
+        <sys_id>eaa1ab31977a8b101f83b390f053af7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 09:00:16</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{"":""},"value":"1970-01-02 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>712f7a9c-28e5-4fa7-9c0f-a8d20a15debd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:12</sys_created_on>
+        <sys_id>f643c886977e8b101f83b390f053af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>306e1486-3add-4c76-bcf8-a182a73d7b6d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3895331973a8b101f83b390f053afb4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{trigger.run_start_date_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:13:12</sys_created_on>
+        <sys_id>f9104c8e973e8b101f83b390f053af80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:13:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5e978130-fa20-4a1a-89bb-6944b42cc37b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c3895331973a8b101f83b390f053afb4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c3895331973a8b101f83b390f053afb4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c3895331973a8b101f83b390f053afb4"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a reminder for lessons at the appropriate interval</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>recurring_class_reminders</internal_name>
+        <label_cache>[{"name":"3202b7e2-d5fc-472b-836a-58c6e3d28ae0.next_class","label":"4 - Calculate Next Class Occurrence➛next class","type":"glide_date","base_type":"glide_date","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":[null,"ah_subject"],"fbe3dff1-c774-4a95-9228-dc28c3b0a8b3":["next_class"],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":[null],"7d1001df-ff5f-42c2-830c-c5cb9ace755c":["next_class"]},"attributes":{"uiType":"glide_date","uiTypeLabel":"Date","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1174ae5c-a92d-490c-8830-dc9236468e53"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to.email","label":"2 - For Each➛Course \u0026 Event Planning Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":["ah_to"]}},{"name":"3202b7e2-d5fc-472b-836a-58c6e3d28ae0.is_occurrence","label":"4 - Check Recurring Class Occurrence➛is occurrence","reference_display":"is occurrence","type":"boolean","base_type":"boolean","usedInstances":{"37538207-9479-4c7d-a65d-26812f5cfca1":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8cbe92a4-3e10-4c0b-9fa3-b43c038a2152"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to.first_name","label":"2 - For Each➛Course \u0026 Event Planning Record➛Assigned to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":[null]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item","label":"2 - For Each➛Course \u0026 Event Planning Record","reference":"x_2099780_juggle_0_course_event_planning","reference_display":"Course \u0026 Event Planning","type":"reference","base_type":"reference","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":["record"],"319434f8-1712-4a2e-88ee-aece4e3524d4":["record"],"a5112dca-3cc5-424d-905e-f4cc3608439e":["record"],"3a1841f8-74e6-4bd4-a4f4-1cb4180d9d9e":["record"],"fbe3dff1-c774-4a95-9228-dc28c3b0a8b3":["record"],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":["record",null],"60430d49-38ee-47ff-af37-4343bc52bac0":["record"],"7d1001df-ff5f-42c2-830c-c5cb9ace755c":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"trigger.run_start_date_time","label":"Trigger - Run Daily ➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["target_date"]},"attributes":{"test_input_hidden":"true"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.date","label":"2 - For Each➛Course \u0026 Event Planning Record➛Starting Date","reference":"","reference_display":"Starting Date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"date","usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["start_date"],"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":[null]}},{"name":"86164f2e-c302-4378-af53-71a758221aed.Records","label":"1 - Look Up Records➛Course \u0026 Event Planning Records","reference":"x_2099780_juggle_0_course_event_planning","reference_display":"Course \u0026 Event Planning","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to","label":"2 - For Each➛Course \u0026 Event Planning Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"assigned_to","usedInstances":{"a5112dca-3cc5-424d-905e-f4cc3608439e":["record"],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":["ah_to"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.next_class","label":"2 - For Each➛Course \u0026 Event Planning Record➛Next Class","reference":"","reference_display":"Next Class","type":"glide_date","base_type":"glide_date","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"next_class","usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["current_next_class"],"8e5ec605-505d-41db-aed8-49d8c687f332":["condition"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.end_date","label":"2 - For Each➛Course \u0026 Event Planning Record➛End Date","reference":"","reference_display":"End Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"end_date","usedInstances":{"8e5ec605-505d-41db-aed8-49d8c687f332":["condition"],"34864be4-eb14-49e9-956e-162795a51e6b":["condition"],"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["end_date"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.recurrence","label":"2 - For Each➛Course \u0026 Event Planning Record➛Recurrence","reference":"","reference_display":"Recurrence","type":"choice","base_type":"choice","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"recurrence","choices":[{"label":"-- None --","sequence":-1.0,"selected":false,"used":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"None"}},"sequence":0.0,"label":"None","selected":false,"used":false,"image":"","reference":false,"rawLabel":"None","missing":false,"value":"none"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Weekly"}},"sequence":1.0,"label":"Weekly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Weekly","missing":false,"value":"weekly"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Monthly"}},"sequence":2.0,"label":"Monthly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Monthly","missing":false,"value":"monthly"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Quarterly"}},"sequence":3.0,"label":"Quarterly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Quarterly","missing":false,"value":"quarterly"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Yearly"}},"sequence":4.0,"label":"Yearly","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Yearly","missing":false,"value":"yearly"}],"usedInstances":{"3202b7e2-d5fc-472b-836a-58c6e3d28ae0":["recurrence"]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.name","label":"2 - For Each➛Course \u0026 Event Planning Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"name","usedInstances":{"2f85406c-0dcd-4b68-beb5-1c5d82b03fd0":["ah_subject",null],"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":["ah_subject",null]}},{"name":"1f41d462-545e-42cc-9113-c2e55585ea9b.item.preparation_status","label":"2 - For Each➛Course \u0026 Event Planning Record➛Preparation Status","reference":"","reference_display":"Preparation Status","type":"choice","base_type":"choice","parent_table_name":"x_2099780_juggle_0_course_event_planning","column_name":"preparation_status","choices":[{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"In preparation"}},"sequence":0.0,"label":"In preparation","selected":false,"used":false,"image":"","reference":false,"rawLabel":"In preparation","missing":false,"value":"in_preparation"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Completed"}},"sequence":1.0,"label":"Completed","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Completed","missing":false,"value":"completed"},{"parameters":{"name":"x_2099780_juggle_0_course_event_planning","dependent_values":[""],"dependent_values_map":{"":"Cancelled"}},"sequence":2.0,"label":"Cancelled","selected":false,"used":false,"image":"","reference":false,"rawLabel":"Cancelled","missing":false,"value":"cancelled"}],"usedInstances":{"2fefc99e-89ec-4785-9e0a-9f8027c7cb0d":[null]}}]</label_cache>
+        <master>true</master>
+        <name>Recurring course reminder</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Recurring course reminder">c3895331973a8b101f83b390f053afb4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd7340c6977e8b101f83b390f053afc5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fd7340c6977e8b101f83b390f053afc5^sys_idNOT IN7d7340c6977e8b101f83b390f053afc7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fd7340c6977e8b101f83b390f053afc5</id>
+        <name>Recurring course reminder</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:57</sys_created_on>
+        <sys_id>7d7340c6977e8b101f83b390f053afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7d7340c6977e8b101f83b390f053afc7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fd7340c6977e8b101f83b390f053afc5^sys_idNOT INc67380c6977e8b101f83b390f053af05"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>c67380c6977e8b101f83b390f053af05</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 13:02:52</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SS2vcMBD+K0XnjZF30zT1rRAWemgDzZJLCGZsjXcFo0dleRMn7H/vyNaaPCp0mYe+F3p4FQQNkqjEThsUK6FtxGCBdqNH7u5JK6zjPDNgFUQXRlHFMOBKdMGZHRpPEHm5A+q56YLCIKpSypU4Ag14N/Y/FWMxggWTUDPeNOWy/P5NXsiS7xd5XUnJl6dK9ww83ucl7rQHTSqgFdXD40p4CIwWE9frh5FOdBtQl6ha2W7WfKRcX1+WzdWmKddqA4hfGfCD9/fq4n8SeOsNnyNahWox/imegKBuLY3LxoHTna0YeO71C2aogB2y+Db7XMo6Z3C273SLtz5qZ+dOhIbO2TgajP09O0jpYQcDxTfpDT3joU+ak4osqbs7uKc/Z8KttpPBPCTXAi0VxBh0M0TsU+JIaBioNuC9tvvaB3fU02PWYooptqIj98Skvd7bAtokvOCIoNhy/2Zq30PQycUvhuHHp8l9/XdIvLOPrLieTZ+Wj7HVSPlb9W3QPv5gguP5H54e/wHc7r8T3AIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fd7340c6977e8b101f83b390f053afc5^sys_idNOT IN0a7340c6977e8b101f83b390f053afdb,3938d10497d783101f83b390f053afc5,bd38d10497d783101f83b390f053afc6,ce7340c6977e8b101f83b390f053afd9,fd38d10497d783101f83b390f053afc3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Calculate Next Class Occurrence">b13dbf79973e8b101f83b390f053afd7</action_type>
+        <action_type_parent display_value="Calculate Next Class Occurrence">0be1af7d97f68b101f83b390f053af5b</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>b13dbf79973e8b101f83b390f053afd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:57</sys_created_on>
+        <sys_id>0a7340c6977e8b101f83b390f053afdb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:27:20</sys_updated_on>
+        <ui_id>3202b7e2-d5fc-472b-836a-58c6e3d28ae0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WXWvbMBT9K8XPUeZvWXkbLYXBtsLa7aUUo4+rVOCv2nLbLOS/T4rtJM2ykLVpYayPPta9Ouf4Hq6v544SzsQJvEAwiQnBASTMcz2ZBCwgrnSjgErBnZFT0BzMyUbTWqeCajDYPc1aC87nngw9EcY+isIIUOhzjojnBYj7EEVREgElbKw05GNbuliYYqGaKqOzH30Pg/BblYkaCmdyfTNyKlqbKzXUzmS+9epQzhllkA2kT3rSu4ToWWWxaaYELLFUq3x48bnvcmbwD1cdXtbCEvNGDjxqKAQYRpJmDYycnBamQ1nPnImuWwPUQMVFkc1WJ25VoTvFOX1s1E9zdejacxKMRN67sXpMe6c6WBoa9NJ05rqtV8aVikPTmSNA0jbTp5tYd+Ci0qosuhJNWTZUl1mbF187W5xVg40P0zaGBFRWp2Xey5CXt+XDt4HluSqWlvQvs5LTbPVEta4Va7XlM3dadfUnv7tXuxyHDHJze5rTqlLFNK3q8l4tbzQC8vGy1Vhm5YNh2qhpMabcqrXzRsfnBj9bwj9oraz0L6aNKbY3fi/UXQuf7EwBDXzCJUGYgEQhj1xEecwRh0SQMMIicImzGDnNrDnNaNOsTTNfK71rreTOwt6stPPblvBaVfqjIXUPvS+LUR8/TPaNMmzErwbe1t2QPC9+6wa7QviCTn8X3gMUD+F9InmXDX14GzNixXQrs5cD2AfWP1ZgE9f9LyO7cvlpUlc+v0lMcYJDXxKBYhdjFAZxhIiPCQoSwhkWEAfMfYWYuqEAThJOcISTYHtoGV7Pp+n6kh05lB9lTx7AeoiauXdrS24Iee6ODPdHrkfel+Q/syQpSUKMWYI8RhgKo0gihn1mxtqNIoI9l/jsFdIX7p1j6q6HttsNOi3M3KXcUnhmDtcNjpLEAxQMSewlnFgGJ4OEffJ+S+eOYK4zGbz/tx4nkjvT+GZrUIDLiPRQEkvzt+qFBCUuxCiRQGLuezJg4ohBvPkFVdtb3y4OAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0a7340c6977e8b101f83b390f053afdb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Fire Event">80a30edeff30311077a95dac793bf19b</action_type>
+        <action_type_parent display_value="Fire Event">15e10e5eff30311077a95dac793bf11e</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>80a30edeff30311077a95dac793bf19b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:01:46</sys_created_on>
+        <sys_id>3938d10497d783101f83b390f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <ui_id>60430d49-38ee-47ff-af37-4343bc52bac0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2W227bOBCGX0XQtWVIFHXyXZFsFgW6bdF0e9MtDIoc2ixoyaUoN94g776jg23ZXjtxkQZYdG8MaHjQP//M59Hne1cJd+KmnIU+CJAy9MMg8JOEZZFgPMnCXAYZuCO3YAvAnbCCwk7bh5G7YrpugnFIaBokYZbQBM/7gUzDPMx86UchkzHFrUJVS83Wn/oTd1PiZ1mS+tOv9WymYeqPuWZV5RSlVVJxZlVZ4DE+V1oYKNzJ5y8jd8kMvtiCcSf3B0tPTUOzHDRu/a3J40Radr1sYgYk4P18E3rTH/0wiJdGNGqCkQt3FgoBKEMyXcHIXbBCMFuatTuxpsaAASbeFXq93TFXKGHiXkOlDAjndl1ZWDitMsfOmXWqeVlr4eTgyGaH21x6V6m/UV1IRgOBE7daV10OBmaqaiwarE979zd5Ox/aTWbjsrxmlt2iSm5r09zWOl8qDlXnLlrKam2vhrFuw7tle0d7xLJcn9LCS10vired2+72xk0/YKSuUCcsGxMbW3qP5O28/L51/EYVrd/9oi4504OtwAyf3yjQ4rCkzFqj8to24u/dWn08LnEX/Lcig4ZFc9eCLZeqmE2XplypVgemtRjPND6MpS6/o/5KzYox440pYyw/G99g/LoNf2JGNQ79gde0ntTqz0J9q+F1Kxf8EEQivYRR6lEa5V6e09DjfpRlzCdEBsR9GDXmXjWk7KzEJKbf6saIztjewmlXluYIN2ppX6GoFfRuPYx68rl/DhlGd4gY4NjtA+rv7wNJA0Fj4kU0Ao8Szr0sCFAzgSiK0ghYlo8VNvXDw/FfwMV0P0Gq3lav13qovUdblLxuS6rEAdzX/Yrz+nqHN3kOvH9v2qQT5pT5V+DWkaZcIOngQMd8y88ZyE8w/fwE/wiwnQsX8HqCyf3a7FO5X50X4VIGnEUBCT0SJtyjGU+9lAL+IJ2EZiknPP4BLjunH4Pz7Dxjya7BN62zOjlfp7ysDVas+1vEzikK9OwYy6t2m/NX7fsk7ofR+93uC5F9PIENsh/7DA4S6oFtH4fz+c3wmPO2W+hxDc/j2kd2vHadu6Uu9f9D1F0+Jk9gt+fwPnV7Hr8IdBmhVMZp6uWECY+mMcVh6KdeElCfYD+RMAp/wjAU6dl2zXftiY2/CAa8PcN4e8LLN6y831zlBMeSemLw864jdkjL7SbYk0IvJGV/sr0q1k5rQPe1aqAq9Qoqx5YOc7bvH3Dl/5JkbZ3Yp2pbixchKo78DP/RpSfiFD/VAkk8FmSpR0iYByLmlMTZzyCKnm1qud++5JmJevzlx0SRY0mXEBX9T9QvQpSkMQ15kngUeww/DFOcUQlEXhgJmVCR8DgNnpGoL/8AiSgOhawRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3938d10497d783101f83b390f053afc5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:01:46</sys_created_on>
+        <sys_id>bd38d10497d783101f83b390f053afc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <ui_id>7d1001df-ff5f-42c2-830c-c5cb9ace755c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfmyjfpH2b6JAmMZjYxAtDkWPfFE+OkyVOoYv633edOG0FiIHEC1rffL98zsk99U1PBCdLEgH3/IWfsNAPw8DzgjTy8yTM/YCHFMAnc6JoCVjZAKsajucNlZ0J9L1fRD6PksCJoxicKGDMWfh+6LAA4jhOY6CL3BUayt0O+7hoa0m317YdI+xOSN6AIsub2zmpaYM3aWjIsn+Uei1USXOQWHo1YX2MXW9rc+YV60pQOhNT8Nx2rmxm9mWFGWwycHxvTuBBg+KAQAoqW5iTkipOddVsyVI3HQYaoPxSye2+4k4oPRIt6UMr/uDNkWfqCkBmzIqwP2ZWoDFcrKim33Ey012z16sSDNpREw4F7aQ+PY6NBZe1FpUaWzTN5dRdya5UF6MiZD/g6Ht0LYKA2vA0yEdaxfe76v5qAnkm1CCJpSgrRuX+RLVuRN5pA6cnIGHQuKR1LdQ6q5tqI4ZmhFK6a4kHt5DVPd7ZirVyKTO4XVSVumcYXw3ha9oIQ+IrjsHm3Zy02/ZU0rY9UEENs9+dQTISsxSyQYVBgmzYBNPMGlHrT3jVBizw3dyaIY9f2jC2OCzU0cyDIR6ywFssTlIv+9Wt15j3MlZ1DYoKG4MGP65SqMRTL5wOZbOfHd6ZzD6b6tm3Q/XbfPIKFpNPfgzb8Twra5UnsfPj3tnFmLBGid/NKOlHMoql8eGd8i9/eMGL/8BHmzRYoj3yhsK1yJjBYpY85H2PA4L8BAKHxwVzopMgd9IwoU6csgRCHqQUPPfQ9twT8j5D3+auV2gwuetMgOTtM6JM1oIS2WjIRpEe2csmZ9c2uX+L3s1jfuINvw/ktP/mSbr9C64UBuOhCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd38d10497d783101f83b390f053afc6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:57</sys_created_on>
+        <sys_id>ce7340c6977e8b101f83b390f053afd9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:27:20</sys_updated_on>
+        <ui_id>86164f2e-c302-4378-af53-71a758221aed</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWbW/TMBD+KyGfQKoqd+26rZ9AHZOQ2IpYNQkBs5zEyQyuHWynXTftv3O281LabKzQSUN8inJ3tp977p6zP9+GLAlHIUoHCJHe/uEBQv0+QsNhPya9KOoP4whF+0dhJxRkRiFSS2WwWeYUTHPCi9pGdAymhOmck+VF6SGBkcEN2OMrxhNFRTj6/LUT5kTBboaqcHS75nosHE4iyiH0HM4Oph5PC0T3GcEZksXV//ty6bgySpVYKP1OSK8NFQkFDCnhmnbCGREJMVIta4uiJJkI3hiumDCwW2iDrzW7gfP6ezYupZBVTL2v/sUlRd6cHhNDzo0qYlOoMtSD1cDHbZ1mTWQL5yV8dNdp4m9sPFmPT+jqgt4d8J3QlBTcjP/szN62Z+7ZM32Ck9wwCVUP+7YuJOJV+pIXM3HmaxnWCC9ams17ju/puUID2TS3BbUVKsuVnl/JxceqGidMOFylk8uY8PqPGKNYVBjLy22YJjhllCeYCc6EPQnKZtuHcjqDE/CM5DkTGc6VnDO3K+Qy62YcfroplwvLBctEl8Q28y40FumegP3YmS+IYpaFU9gGFnfsgVewtDwP61ix3OAFSzJqmtOrqESaBeHf2/xlx+GqUC698K4T6qUec6J1Qza0Kf5RWA489SV72BXKLXEo3kAGc1oSZXvAyTY+eFC2+2sS9YVe6RcB8sOxBbQ5SX7xbTdNHgGrYmZiuzSIlvchLceJ7wMX8etIObGO4Mw7qpbf2Vg5RLsZK22y35TlVqrclJttv79Q2xOKqk3F24vBc/MbRQwevMiGvabPoMhYUQ2U6hVF9BDalII3bqeBRwCpNHBKroOPNZJWeKUMoENp5lhd1cC72loKYLAzAQyerwCgKOjeK6nX8d4d30hPo5Hd3wuHDz/nUNNmsRQJsxhXRWBRz5lZujfdlwL2SGJZKE0vFY0L5Vh74e1CCnrZXBWTs6mcSaXk4vU3Mice4yjT3YhmTAjgbJJWES9frcVAhqveS9gPyKIJNvLd+dlk+vb0w/RTy5P3eaPdbmw8onLV2Bivlq6tnNVTfN32vm2D6n25w9GBnu/w+Eduzye6JB9uskHU9JPfrpkM13gPHR0dHCL8rcgyTjHCXmuYzi0GKKnTzaZKxy4ssDrcGwZvbXTwoYnepUpcApVKpmUGawmV2nC/be9Kt2ztXYn+z3fl87w0ARDj0CHYl1BDezkq5zDaC+0cigjt99rhFfv1J6a1cIXCEQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ce7340c6977e8b101f83b390f053afd9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:01:46</sys_created_on>
+        <sys_id>fd38d10497d783101f83b390f053afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <ui_id>2fefc99e-89ec-4785-9e0a-9f8027c7cb0d</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fd38d10497d783101f83b390f053afc3"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fd7340c6977e8b101f83b390f053afc5^sys_idNOT IN827340c6977e8b101f83b390f053afd6,ca7340c6977e8b101f83b390f053afd3"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d65f9775973a8b101f83b390f053af58</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>1f41d462-545e-42cc-9113-c2e55585ea9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:57</sys_created_on>
+        <sys_id>827340c6977e8b101f83b390f053afd6</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <ui_id>8e5ec605-505d-41db-aed8-49d8c687f332</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V207cMBD9lZWfd6NcNit239BSJKQCbUFIVUujiTNhrTp2ajvAdpV/7ziXBRUkStunqi9RfDwzPmc8J9kx3bi6cfZSH1orbhRbfbqeMqE8Ru87pqBCtmJcq0I4oRWbsluQjcd2u6icR8V8Ec/SeYqzecz5bBlFyYzHmKbpQYqwzAPhsApQFVkBDtv25OLN6bvLj1/O3v9e/ucmDBPsnsVrKii8dxmXYG3bkohC2FrC9upf0MI3QhYGh8urwdCdOTRstftpSxQkdQlpmUZhypN4kcRhGB/Mo3yR5FFcJIDzBRWUkKOk0PWjW39mENy29pB1RqibYf12SL0YQW0KTyUOp4xYk3YkEiVIi1NWgaJGaLNlK2caAgxCca7kdh+xEcpRNeZj7634jr5SGPrIEkkXx353v8yGi+3h8ggcEJWGu8YMoXyjBUfbd6TAEhrp1o+xPuC87lR2KQ5yOWZr2VTqrG8G2xcY54iQxhIJrL1Sz30QUl5s9N2HkeWxUF1Xhk2pOcj9Chz1Lm+c57NjKLGiQlkFdU0dzWqjb0WXTFyq4EbSIiilvqNDvYMD4J54QI2F4Jjwow6+AiO8ilMqQ8k0Czaz3Ih61NYdztops1u79qP1oJGam31rPMNe8aAt69vjU7pCh3TwLQ4y2unTb0fWAQ8fkO6YiUUj0E4EvTkh5QT6Mk8s+kL060xQhlBGSx49bwJInjPBpJ/tp1YYdb3GD9ELfhiQXzJEmv73wx/7wdPMwQqedX8/Kuc/SX/RENd+8PtD983mwhK3S4+djP9cv7GliRL8MXSnzVev6gFrfwAojT8bvQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">041e5779973a8b101f83b390f053afda</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Recurring course reminder">fd7340c6977e8b101f83b390f053afc5</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:57</sys_created_on>
+        <sys_id>ca7340c6977e8b101f83b390f053afd3</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <ui_id>1f41d462-545e-42cc-9113-c2e55585ea9b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTW+jMBD9Lz4TxEdKPm5Vq0qVdrdSWvWyqqLBHhJrjc3aJimL+O87DoRWPfYE8zzz5r2H6ZlpfdN692JunZMHzba/3yImdcDovWcaamRbJj3WjkXsBKoNdd+vi7RYVhkueJ5ki2W+Wi+guskXqxRWN+ssSwFFvENurHDDQKNCukZB9/p9Bn6USlicRDZgSZtHy7b9lyMpaEG6EdUmTTY8z4o8S5JsvUzLIi/TTOTEXBChghIVtT5O7r6Y9V0TSjtKmIAf08xuRukRRGRJxPDdoxZI6ytQDiNWgxbgje3Y1tuWAIsgnrTq5o6j1J7oWOh9d/IfbUyTJDRWSIY4jodzuZ9yHOHqHjw8EzX3rZ1a+dFIjm6MQmAFrfJ3n7Gx4anx0uhxxEOprtNGtbX+NSbBZoLrZyOkdSQCm2A0SJ98VM9Hc95dVT5IfQllOlSGg5or8N7KsvVBT89QYU1E+xqaRurDvrHmJC/DpKWOD4qKuFLmTEvDFY2BB+Ex5QrxA+H3F/gVrAwufhINDQ8Rc527U+DchxcKcf+3DUpGZ5OH/RhDGOFWNv6WFpxwkju8hVs/cs+ZculIwkvAHq//Sjjo6AZJ/hk6G/sniP/Ahv8e74qzdQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fd7340c6977e8b101f83b390f053afc5^sys_idNOT IN067380c6977e8b101f83b390f053af07,0a7380c6977e8b101f83b390f053af06,25509980979783101f83b390f053afbc,427380c6977e8b101f83b390f053af07,467380c6977e8b101f83b390f053af06,7d38150497d783101f83b390f053af0a,827380c6977e8b101f83b390f053af06,8e7380c6977e8b101f83b390f053af06,b138150497d783101f83b390f053af0b,b538150497d783101f83b390f053af0c,ca7380c6977e8b101f83b390f053af06,fd38150497d783101f83b390f053af0b"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{trigger.run_start_date_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>067380c6977e8b101f83b390f053af07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5e978130-fa20-4a1a-89bb-6944b42cc37b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>0a7380c6977e8b101f83b390f053af06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e5241a76-9696-4d5f-9f70-44319f69ca87</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{3202b7e2-d5fc-472b-836a-58c6e3d28ae0.next_class}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 08:27:20</sys_created_on>
+        <sys_id>25509980979783101f83b390f053afbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:27:20</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ebb31659-2a9e-4fd0-b9be-f7d5cb8bd632</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>cbb1b72b-f95b-4881-adb2-d9887b4a8064</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>427380c6977e8b101f83b390f053af07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:58</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{"":""},"value":"1970-01-02 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>712f7a9c-28e5-4fa7-9c0f-a8d20a15debd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>467380c6977e8b101f83b390f053af06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>969493ac-21a8-4868-92aa-19c42a4ff365</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:01:46</sys_created_on>
+        <sys_id>7d38150497d783101f83b390f053af0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8c8785c2-e558-4f18-82c0-f2faf3d24968</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>5e978130-fa20-4a1a-89bb-6944b42cc37b</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>827380c6977e8b101f83b390f053af06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:58</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-02 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>25280a47-bb55-4f2d-94a7-392397630393</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{trigger.run_start_date_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>8e7380c6977e8b101f83b390f053af06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>cbb1b72b-f95b-4881-adb2-d9887b4a8064</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.preparation_status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:01:46</sys_created_on>
+        <sys_id>b138150497d783101f83b390f053af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d6f3d196-e1f9-4f9e-9380-348479b2dae6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{3202b7e2-d5fc-472b-836a-58c6e3d28ae0.next_class}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:01:46</sys_created_on>
+        <sys_id>b538150497d783101f83b390f053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d8e95a65-7299-43ea-ae08-73ef5581de14</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item.date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:58</sys_created_on>
+        <sys_id>ca7380c6977e8b101f83b390f053af06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 11:27:58</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>306e1486-3add-4c76-bcf8-a182a73d7b6d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fd7340c6977e8b101f83b390f053afc5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{1f41d462-545e-42cc-9113-c2e55585ea9b.item}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:01:46</sys_created_on>
+        <sys_id>fd38150497d783101f83b390f053af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Juggle Jungle Operations">97d15f4f9756cb101f83b390f053af0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:01:46</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>65736d90-25cb-4a44-9ddc-a1b44acee3f9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fd7340c6977e8b101f83b390f053afc5"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c3895331973a8b101f83b390f053afb4</sys_id>
+        <latest_snapshot>fd7340c6977e8b101f83b390f053afc5</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c3895331973a8b101f83b390f053afb4^sys_idNOT IN127380c6977e8b101f83b390f053af79"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"127380c6977e8b101f83b390f053af79","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>c3895331973a8b101f83b390f053afb4</plan_id>
+        <snapshot>fd7340c6977e8b101f83b390f053afc5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 11:27:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>127380c6977e8b101f83b390f053af79</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 08:27:22</sys_updated_on>
+        <trigger display_value="">927380c6977e8b101f83b390f053af5c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c3895331973a8b101f83b390f053afb4"/>
+</record_update>

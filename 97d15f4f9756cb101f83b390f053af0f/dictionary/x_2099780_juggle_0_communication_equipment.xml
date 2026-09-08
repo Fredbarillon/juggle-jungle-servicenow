@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="87c47228973603101f83b390f053afd2" label="Communication Equipment" max_length="40" name="x_2099780_juggle_0_communication_equipment" type="collection">
+        <element label="Equipment" max_length="32" name="equipment" reference="x_2099780_juggle_0_equipement" type="reference"/>
+        <element label="Communication Content" max_length="32" name="communication_content" reference="x_2099780_juggle_0_communication_content" type="reference"/>
+        <index name="index">
+            <element name="communication_content"/>
+        </index>
+        <index name="index2">
+            <element name="equipment"/>
+        </index>
+    </element>
+</database>

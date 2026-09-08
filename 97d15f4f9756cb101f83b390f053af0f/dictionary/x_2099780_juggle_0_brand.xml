@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="077b8093975ecb101f83b390f053af59" label="Brand" max_length="40" name="x_2099780_juggle_0_brand" type="collection">
+        <element default="true" label="Active" max_length="255" name="active" type="boolean"/>
+        <element label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element label="Notes" max_length="500" name="notes" type="string"/>
+        <element label="Website" max_length="1024" name="website" type="url"/>
+    </element>
+</database>
